@@ -194,6 +194,10 @@ body {
   .contact-info a {
     text-decoration: none;
     color: black;
+    transition: color 0.3s;
+  }
+  .contact-info a:hover {
+    color: white;
   }
   .image-container {
     flex: 1 1 50%;
