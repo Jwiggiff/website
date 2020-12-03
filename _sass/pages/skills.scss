@@ -1,0 +1,61 @@
+.programming-skills {
+  margin-top: 20px;
+  float: left;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  width: 40%;
+  padding-right: 20px;
+
+  .skill {
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%;
+    flex: 1 1 0;
+    padding: 10px 20px;
+    background-color: rgb(216, 222, 35);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    .rating {
+      width: calc(18px * 6);
+      text-align: left;
+
+      i + i {
+        margin-left: 4px;
+      }
+    }
+  }
+  .skill:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+.other-skills {
+  margin-top: 20px;
+  float: left;
+  width: 60%;
+  display: flex;
+  flex-flow: wrap;
+  padding-left: 20px;
+  padding-right: 50px;
+  border-left: 1px solid black;
+
+  h2 {
+    width: 100%;
+  }
+
+  .skill {
+    flex: auto;
+    margin: 10px 10px 0 0;
+    padding: 10px 20px;
+    background-color: rgb(216, 222, 35);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .skill:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+}

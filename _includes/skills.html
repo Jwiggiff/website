@@ -1,0 +1,31 @@
+<h1>Skills</h1>
+<div class="cube-only">
+  <ul>
+    {%- for skill in site.data.skills.programming -%}
+    <li>{{ skill.name }}</li>
+    {%- endfor -%}
+  </ul>
+</div>
+<div class="fullpage-only">
+  <div class="programming-skills">
+    <h2>Programming</h2>
+    {%- for skill in site.data.skills.programming -%}
+    <div class="skill">
+      <h4>{{ skill.name }}</h4>
+      <span class="rating">
+        {%- assign rating = skill.rating -%} {%- for i in (1..rating) -%}
+        <i class="fas fa-star"></i>
+        {%- endfor -%}
+      </span>
+    </div>
+    {%- endfor -%}
+  </div>
+  <div class="other-skills">
+    <h2>Other</h2>
+    {%- for skill in site.data.skills.other -%}
+    <div class="skill">
+      <h4>{{ skill }}</h4>
+    </div>
+    {%- endfor -%}
+  </div>
+</div>

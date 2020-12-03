@@ -1,0 +1,19 @@
+url: "https://joshfriedman.dev"
+baseurl: ""
+title: "Josh Friedman"
+description: "Josh Friedman: Developer, Musician, Athlete"
+author: "Josh Friedman"
+logo: "/assets/img/JoshFriedman-logo.png"
+
+email: friedman.josh03@gmail.com
+phone: (416) 843-6670
+resume_tagline: Grade 12 Student @ William Lyon Mackenzie CI
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: "/assets/img/JoshFriedman-logo.png"
+
+plugins:
+  - jekyll-seo-tag

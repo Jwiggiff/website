@@ -1,0 +1,29 @@
+<h1>Experience</h1>
+<div class="cube-only">
+  <ul>
+    {%- for experience in site.data.experience -%}
+    <li>{{ experience.title }} at {{ experience.organization }}</li>
+    {%- endfor -%}
+  </ul>
+</div>
+<div class="fullpage-only scroll">
+  {%- for experience in site.data.experience -%}
+  <div class="experience">
+    <div class="firstRow">
+      <span class="company">{{ experience.organization }}</span>
+      <span class="date">{{ experience.date }}</span>
+    </div>
+    <div class="clear"></div>
+    <div class="secondRow">
+      <span class="title">{{ experience.title }}</span>
+      <span class="location">{{ experience.location }}</span>
+    </div>
+    <div class="clear"></div>
+    <ul class="description">
+      {%- for point in experience.description -%}
+      <li>{{ point }}</li>
+      {%- endfor -%}
+    </ul>
+  </div>
+  {%- endfor -%}
+</div>

@@ -1,0 +1,26 @@
+@import "_variables";
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+  background: $bg-gradient;
+}
+
+.clear {
+  clear: both;
+}
+
+@import "labels";
+@import "cube";

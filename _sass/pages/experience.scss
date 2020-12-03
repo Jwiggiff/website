@@ -1,0 +1,43 @@
+.experience {
+  margin-top: 10px;
+  background-color: rgb(224, 107, 29); /*rgb(252, 160, 98);*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 8px;
+
+  .firstRow {
+    height: 25px;
+
+    .company {
+      font-weight: bold;
+      float: left;
+      line-height: 25px;
+    }
+
+    .date {
+      float: right;
+      line-height: 25px;
+    }
+  }
+
+  .secondRow {
+    font-size: 0.75em;
+    font-style: italic;
+
+    .title {
+      float: left;
+    }
+
+    .location {
+      float: right;
+    }
+  }
+
+  .description {
+    margin: 5px 0 10px 24px;
+
+    li {
+      margin-top: 5px;
+    }
+  }
+}
