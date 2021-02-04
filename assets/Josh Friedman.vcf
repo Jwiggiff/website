@@ -2,7 +2,6 @@ BEGIN:VCARD
 VERSION:2.1
 N;LANGUAGE=en-ca:Friedman;Josh
 FN:Josh Friedman
-TEL;CELL;VOICE:(416) 843-6670
 X-MS-OL-DEFAULT-POSTAL-ADDRESS:0
 URL;WORK:https://joshfriedman.dev
 EMAIL;PREF;INTERNET:friedman.josh03@gmail.com
