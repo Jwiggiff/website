@@ -1,0 +1,119 @@
+- organization: Incendium Academy
+  url: https://incendiumacademy.org/
+  title: Web Developer
+  date: October 2020 - Present
+  location: Toronto, Ontario
+  description:
+    - Designed and created a highly interactive front-end site
+    - Maintained standard SEO and mobile-friendly standards on the site
+    - Structured and programed a back-end database to store user data
+  tags:
+    - JavaScript
+    - HTML
+    - CSS
+    - Jekyll
+    - Git
+    - Firebase
+    - Critical thinking
+    - Problem solving
+    - Leadership skills
+    - Teamwork skills
+
+- organization: Live2Give
+  url: https://canada.ncsy.org/live2give-for-boys/
+  title: Volunteer
+  date: October 2017 - Present
+  location: Toronto, Ontario
+  description:
+    - Engaged in weekly volunteer initiatives such as packaging food at food banks, making blankets, scarves, and hats for homeless people, and packaging food baskets for the elderly
+    - Helped organize initiatives and fundraisers in the community such as Jump4Chai
+  tags:
+    - Interpersonal skills
+    - Communication and presentation skills
+    - Problem solving
+    - Engage & motivate groups
+    - Leadership skills
+    - Teamwork skills
+
+- organization: Socially-Distanced Backyard Karate Lessons
+  title: Sensei
+  date: June 2020 - October 2020
+  location: Toronto, Ontario
+  description:
+    - Self-employed
+    - Led fun and engaging karate classes in backyards around my neighbourhood
+    - Taught several classes of students aged 4-12
+  tags:
+    - Interpersonal skills
+    - Communication and presentation skills
+    - Critical thinking
+    - Engage & motivate groups
+    - Leadership skills
+
+- organization: One Stop Therapy
+  url: https://www.onestoptherapy.ca/
+  title: Web Developer
+  date: June 2020 - August 2020
+  location: Vancouver, British Columbia
+  description:
+    - Updated several pages and elements on a WordPress site
+    - Fixed back-end and front-end bugs
+    - Provided technical support for customers on the site
+  tags:
+    - JavaScript
+    - HTML
+    - CSS
+    - PHP
+    - WordPress
+    - FTP
+    - Critical thinking
+    - Problem solving
+
+- organization: HebrewCrew
+  title: Assistant Hebrew Teacher
+  date: January 2019 - March 2020
+  location: Toronto, Ontario
+  description:
+    - Taught children to read & write in Hebrew
+    - Taught children the stories from the Torah
+    - Taught children the history of Jewish holidays
+  tags:
+    - Interpersonal skills
+    - Communication and presentation skills
+    - Engage & motivate groups
+    - Leadership skills
+
+- organization: Camp Timberlane
+  url: https://camptimberlane.ca/
+  title: Counsellor in Training (CIT)
+  date: July 2019 - August 2019
+  location: Haliburton, Ontario
+  description:
+    - Supervised and took care of children aged 9-14
+    - Helped plan and run various activites for the entire camp
+    - Helped facilitate fun activites such as sailing for campers
+    - Worked on the tech team for various productions, creating queues for screens and music on stage
+  tags:
+    - Interpersonal skills
+    - Critical thinking
+    - Problem solving
+    - Engage & motivate groups
+    - Leadership skills
+    - First Aid & CPR Certified
+
+- organization: North Toronto Karate School
+  url: https://www.northtorontokarate.com/home.htm
+  title: Assistant Karate Teacher (Senpai)
+  date: October 2017 - June 2019
+  location: Toronto, Ontario
+  description:
+    - Taught karate classes to people aged 5-40+
+    - Helped facilitate school performances
+    - Helped facilitate and organize tournaments
+  tags:
+    - Interpersonal skills
+    - Communication and presentation skills
+    - Critical thinking
+    - Problem solving
+    - Engage & motivate groups
+    - Leadership skills

@@ -1,0 +1,67 @@
+@keyframes rslide {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.nav {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  z-index: 99;
+  display: flex;
+  justify-content: flex-end;
+
+  @include media-query($on-palm) {
+    display: none;
+  }
+}
+
+.nav-list {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  margin-left: 0.5rem;
+}
+.nav-item {
+  animation: rslide 0.4s ease forwards;
+  transform: translateX(-200px);
+
+  @for $i from 2 through 4 {
+    &:nth-child(#{$i}) {
+      animation-delay: 0.05s * ($i - 1);
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  &.active a::before {
+    transform: scale(1.5);
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background-color: black;
+      transition: transform 0.3s ease;
+    }
+  }
+}

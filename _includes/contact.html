@@ -1,40 +1,20 @@
-<h1>Contact</h1>
-<div class="cube-only">
-  <p>Email: friedman.josh03@gmail.com</p>
-</div>
-<div class="fullpage-only">
-  <div class="contact-container">
-    <div class="contact-info">
-      <a href="mailto:friedman.josh03@gmail.com" target="_blank"
-        ><i class="fas fa-envelope"></i> friedman.josh03@gmail.com</a
-      >
-      <div class="buttons">
-        <button onclick="window.open('assets/Josh Friedman.vcf')">
-          Download VCard
-        </button>
-        <button onclick="window.open('resume.html')">Print Resume</button>
-      </div>
-      <div class="socials">
-        <a href="https://codepen.io/jwiggiff" target="_blank" title="CodePen">
-          <i class="fab fa-codepen"></i>
-        </a>
-        <a href="https://github.com/Jwiggiff" target="_blank" title="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/josh-friedman-1b9222199/"
-          target="_blank"
-          title="LinkedIn"
-        >
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://www.fiverr.com/share/Wo8dq7" target ="_blank" title="Fiverr">
-          <img style="width: 1em" src="https://unpkg.com/simple-icons@v4/icons/fiverr.svg" alt="Fiverr">
-        </a>
-      </div>
-    </div>
-    <div class="image-container">
-      <img src="assets/img/portrait2.jpg" alt="Portrait" />
-    </div>
-  </div>
+<div class="contact">
+  {%- for contact in site.contact_links -%}
+  <a
+    target="_blank"
+    href="{{ contact.url }}"
+    class="contact-link"
+    title="{{ contact.name }}"
+  >
+    {% if contact.not_fa == true %}
+    <img
+      style="width: 75%; filter: invert(1)"
+      src="{{ contact.icon | absolute_url }}"
+      alt="{{ contact.name }}"
+    />
+    {% else %}
+    <i class="{{ contact.icon }}"></i>
+    {% endif %}
+  </a>
+  {%- endfor -%}
 </div>

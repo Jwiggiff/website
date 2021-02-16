@@ -1,13 +1,33 @@
-$cube-scale: 60vmin;
-
 /* Colors */
-$blue: rgb(31, 117, 255);
-$green: rgb(102, 255, 71);
-$yellow: rgb(248, 255, 37);
-$orange: rgb(247, 143, 74);
+$orange: rgba(208, 106, 12, 1);
+$grey: rgba(190, 190, 190, 1);
 
-$bg-gradient: radial-gradient(
-  circle,
-  rgba(97, 97, 97, 1) 0%,
-  rgba(0, 0, 0, 1) 100%
+/* Gradients */
+$orange-gradient: linear-gradient(
+  to right,
+  rgba(240, 123, 15, 1),
+  rgba(176, 89, 10, 1)
 );
+$bg-gradient: linear-gradient(
+  45deg,
+  rgba(98, 98, 98, 1) 0%,
+  rgba(203, 203, 203, 1) 100%
+);
+
+/* Media Queries */
+$on-palm: 600px;
+$on-laptop: 800px;
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin hover {
+  @media screen and (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}

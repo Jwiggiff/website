@@ -1,0 +1,11 @@
+- name: Music
+  image: /assets/img/music.jpg
+  description: I love music, both listening and making it. I mainly listen to classic rock, pop and jazz, but I can find something to listen to in almost any genre. I also play guitar and saxophone. I've recently gotten into music production/recording and sometimes make tracks when I'm bored.
+
+- name: Martial Arts
+  image: /assets/img/karate.jpg
+  description: I've been doing martial arts since I was about 3. I did karate for 13 years and reached my third degree black belt. Although I currently do not do any martial arts, I am still very interested in it and would like to start a new martial soon.
+
+- name: Hockey
+  image: /assets/img/hockey.jpg
+  description: Of course, being from Canada means I love hockey. I've been playing house league hockey ever since I was 7. Although I am from Toronto, my number one team is, and always will be, the Montreal Canadiens, though the Leafs are definitely a close second.

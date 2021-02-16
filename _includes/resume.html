@@ -1,0 +1,67 @@
+<section id="resume" class="resume">
+  <h1 class="title">Resume</h1>
+
+  <div class="view-pdf">
+    <a target="_blank" href="{{ "/resume" | relative_url }}">View PDF</a>
+  </div>
+
+  <div class="print">
+    <i class="fas fa-print"></i>
+    <a target="_blank" href="{{ "/resume" | relative_url }}">Print</a>
+  </div>
+
+  <div class="wrapper">
+    <div class="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        {%- for skill in site.data.skills -%}
+        <li class="skill" data-tag="{{ skill | downcase }}">{{ skill | escape }}</li>
+        {%- endfor -%}
+      </ul>
+    </div>
+    <div class="experience">
+      <h2>Work Experience</h2>
+      <ul class="experience-list scrollable">
+        {%- for work in site.data.experience -%}
+          <li class="work" data-tags="{{ work.tags | join: ' ' | downcase }}">
+            <div class="card">
+              <div class="first-row">
+                {%- if work.url -%}
+                <a target="_blank" href="{{ work.url | absolute_url }}" class="company">{{ work.organization | escape }}</a>
+                {%- else -%}
+                <span class="company">{{ work.organization | escape }}</span>
+                {%- endif -%}
+                <span class="date">{{ work.date | escape }}</span>
+              </div>
+              <div class="second-row">
+                <span class="title">{{ work.title | escape }}</span>
+                <span class="location">{{ work.location | escape }}</span>
+              </div>
+              <div class="description">
+                <ul>
+                  {%- for description in work.description -%}
+                  <li>{{ description | escape }}</li>
+                  {%- endfor -%}
+                </ul>
+              </div>
+            </div>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+    <div class="education">
+      <h2>Education</h2>
+      <ul class="school-list">
+        {%- for school in site.data.education -%}
+        <li>
+          <div class="first-row">
+            <span class="name">{{ school.name | escape }}</span>
+            <span class="date">{{ school.date | escape }}</span>
+          </div>
+          <span class="location">{{ school.location | escape }}</span>
+        </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+</section>

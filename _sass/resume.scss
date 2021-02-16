@@ -1,134 +1,169 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: auto;
-}
-
-body {
-  margin: 1cm;
-  font-family: "Montserrat", sans-serif;
-}
-
-header {
-  width: 100%;
-  padding-bottom: 10px;
-  border-bottom: 1px solid black;
-  font-size: 1.25vw;
-
-  .name {
-    float: left;
-    padding-right: 10px;
-
-    h1 {
-      text-align: right;
-    }
+.resume {
+  .view-pdf {
+    display: none;
+    margin: auto;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    border: 2px solid black;
+    background: $grey;
   }
-}
-
-.clear {
-  clear: both;
-}
-
-.left {
-  float: left;
-  width: 70%;
-}
-
-.right {
-  float: right;
-}
-
-span i {
-  width: 24px;
-  text-align: center;
-}
-
-.links {
-  border-left: 1px solid black;
-  padding-left: 10px;
-  float: left;
-}
-
-section {
-  margin-top: 20px;
 
   h2 {
-    display: inline-block;
-  }
-  h2:after {
-    content: "";
-    display: block;
-    width: 40%;
-    padding-top: 5px;
-    border-bottom: 5px solid black;
-  }
-}
-
-.experience {
-  margin-top: 10px;
-  border-bottom: 1px solid black;
-  padding: 8px;
-
-  .firstRow {
-    height: 25px;
-
-    .company {
-      font-weight: bold;
-      float: left;
-      line-height: 25px;
-    }
-
-    .date {
-      float: right;
-      line-height: 25px;
-    }
+    margin-bottom: 0.5rem;
   }
 
-  .secondRow {
-    font-size: 0.75em;
-    font-style: italic;
-
-    .title {
-      float: left;
-    }
-
-    .location {
-      float: right;
-    }
+  .print {
+    text-align: center;
   }
 
-  .description {
-    margin: 5px 0 10px 24px;
+  .wrapper {
+    margin-top: 1rem;
+    padding: 0 8rem;
+    width: 100%;
+    min-height: 0;
+    display: grid;
+    grid-template-areas:
+      "A B"
+      "C B";
+    grid-auto-columns: 2fr 3fr;
+    grid-auto-rows: minmax(0, 1fr);
+    gap: 2rem;
+  }
 
-    li {
-      margin-top: 5px;
+  .skills {
+    grid-area: A;
+
+    .skills-list {
+      list-style: none;
+      display: flex;
+      flex-flow: wrap;
+      gap: 0.25rem;
+
+      .skill {
+        padding: 0.25rem 0.75rem;
+        border-radius: 30px;
+        border: 2px solid black;
+        background: $grey;
+        transition: background 0.2s ease;
+
+        &.active {
+          background: $orange;
+        }
+      }
     }
   }
-}
 
-.education {
-  margin-top: 10px;
-  padding: 0 8px;
+  .experience {
+    display: flex;
+    flex-flow: column;
+    grid-area: B;
+    max-height: 100%;
 
-  .school {
-    font-weight: bold;
-    float: left;
-    line-height: 25px;
+    .experience-list {
+      display: flex;
+      flex-flow: column;
+      gap: 0.5rem;
+      list-style: none;
+      max-height: 100%;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: black;
+        border-radius: 30px;
+      }
+    }
+
+    .card {
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      border: 2px solid black;
+      background: $grey;
+      transition: background 0.2s ease;
+
+      .first-row {
+        display: flex;
+        justify-content: space-between;
+
+        .company {
+          font-weight: bold;
+          color: black;
+          text-decoration: none;
+        }
+
+        a.company:hover {
+          text-decoration: underline;
+        }
+      }
+      .second-row {
+        display: flex;
+        justify-content: space-between;
+        font-style: italic;
+        font-size: 0.75em;
+      }
+      .description {
+        margin-left: 1.5rem;
+        margin-top: 0.25rem;
+      }
+    }
+
+    .active .card {
+      // border-color: $orange;
+      background: $orange;
+    }
   }
 
-  .date {
-    float: right;
-    line-height: 25px;
+  .education {
+    grid-area: C;
+    align-self: flex-end;
+
+    .school-list {
+      list-style: none;
+
+      li {
+        border-radius: 10px;
+        padding: 0.5rem 1rem;
+        border: 2px solid black;
+        background: rgba(190, 190, 190, 1);
+
+        &:not(:last-child) {
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      .first-row {
+        display: flex;
+        justify-content: space-between;
+
+        .name {
+          font-weight: bold;
+        }
+        .date {
+          text-align: right;
+          white-space: nowrap;
+        }
+      }
+
+      .location {
+        font-size: 0.75em;
+        font-style: italic;
+      }
+    }
   }
 
-  .location {
-    font-size: 0.75em;
-    font-style: italic;
-    float: left;
+  @include media-query($on-palm) {
+    min-height: 0;
+
+    .view-pdf {
+      display: block;
+    }
+    .print {
+      display: none;
+    }
+    .wrapper {
+      display: none;
+    }
   }
 }
