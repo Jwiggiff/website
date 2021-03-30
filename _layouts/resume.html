@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <title>{{ site.title }}</title>
     {%- seo title=false -%}
-    <link rel="stylesheet" href="{{ "/assets/css/print.css" | relative_url }}">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
     <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
@@ -14,6 +13,13 @@
     {%- if jekyll.environment == 'production' -%}
       {%- include google_analytics.html -%}
     {%- endif -%}
+
+    {%- capture css -%}
+      {%- include print.scss -%}
+    {%- endcapture -%}
+    <style>
+      {{ css | strip_newlines | sassify }}
+    </style>
   </head>
   <body>
     {{ content }}

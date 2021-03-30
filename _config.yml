@@ -35,3 +35,7 @@ defaults:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-pdf_generator
+
+exclude:
+  - _plugins

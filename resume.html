@@ -1,11 +1,7 @@
 ---
 layout: resume
+pdf: true
 ---
-
-<!-- TODO:
-    - implement jekyll-pdf (https://github.com/abeMedia/jekyll-pdf)
-    - Add skills to pdf version
-  -->
 
 <header>
   <div class="left">
@@ -62,8 +58,11 @@ layout: resume
   </div>
   {%- endfor -%}
 </section>
-<script type="text/javascript">
-  window.onload = function () {
-    window.print();
-  };
-</script>
+<section id="skills">
+  <h2>Skills</h2>
+  <ul class="skills-list">
+    {%- for skill in site.data.skills -%}
+    <li class="skill">{{ skill }}</li>
+    {%- endfor -%}
+  </ul>
+</section>
