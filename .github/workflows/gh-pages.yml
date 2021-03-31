@@ -20,7 +20,7 @@ jobs:
       #   with:
       #     chrome-version: stable
       # - run: chrome --version
-      # - run: echo "PUPPETEER_EXECUTABLE_PATH=$(which chrome)" >> $GITHUB_ENV
+      - run: echo "PUPPETEER_EXECUTABLE_PATH=CHROMEWEBDRIVER" >> $GITHUB_ENV
       - run: echo "$CHROMEWEBDRIVER"
       - uses: helaili/jekyll-action@v2
         with:
