@@ -1,0 +1,37 @@
+/* Keyframes */
+@keyframes fade { 40% { opacity: 0.8; }
+  42% { opacity: 0.1; }
+  43% { opacity: 0.8; }
+  45% { opacity: 0.1; }
+  46% { opacity: 0.8; } }
+
+@keyframes blink { 70% { opacity: 0.7; } }
+
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body { font-family: "Montserrat", sans-serif; overflow: hidden; background: radial-gradient(circle, #3c3c3c 0%, #0a0a0a 50%, black 100%); }
+
+section { height: 100%; display: flex; flex-flow: column; justify-content: center; align-items: center; transform: rotate(-3deg); }
+
+.title { display: flex; justify-content: center; align-items: center; }
+
+.subtitle { display: flex; flex-flow: column; justify-content: center; align-items: center; }
+
+h1 { font-size: 20vw; font-weight: 100; text-align: center; color: #ebffff; text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), 0 0px 15px #fff, 0 0 10px #38eeff, 0 0 50px #38eeff; }
+
+h1:nth-child(1) { animation: fade 3s infinite alternate; }
+
+h1:nth-child(2) { animation: fade 3s 4s infinite alternate; }
+
+h1:nth-child(3) { animation: fade 3s 2s infinite alternate; }
+
+h2 { font-size: 2vw; font-weight: 100; text-align: center; color: #ebffff; text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), 0 0px 15px #fff, 0 0 10px #38eeff, 0 0 50px #38eeff; animation: blink 0.01s infinite alternate; line-height: 2.5em; }
+
+a { text-decoration: none; font-size: 1.5vw; font-weight: 100; text-align: center; color: #ebffff; text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), 0 0px 15px #fff, 0 0 10px #38eeff, 0 0 50px #38eeff; animation: blink 0.01s infinite alternate; transition: transform 200ms ease-in-out; }
+
+a:hover, a:active, a:focus { outline: none; transform: rotate(3deg); }
+
+/*# sourceMappingURL=404.css.map */
