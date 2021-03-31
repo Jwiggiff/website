@@ -1,6 +1,6 @@
 const container = document.querySelector(".container");
 const nameEl = document.querySelector(".landing .name");
-const isMobile = window.matchMedia("screen and (max-width: 600px").matches;
+const isMobile = window.matchMedia("screen and (max-width: 800px").matches;
 let currentScroll = 0;
 let scrolling = false;
 

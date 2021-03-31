@@ -15,7 +15,7 @@
       <h2>Skills</h2>
       <ul class="skills-list">
         {%- for skill in site.data.skills -%}
-        <li class="skill" data-tag="{{ skill | downcase }}">{{ skill | escape }}</li>
+        <li class="skill" data-tag="{{ skill | slugify }}">{{ skill | escape }}</li>
         {%- endfor -%}
       </ul>
     </div>
@@ -23,7 +23,9 @@
       <h2>Work Experience</h2>
       <ul class="experience-list scrollable">
         {%- for work in site.data.experience -%}
-          <li class="work" data-tags="{{ work.tags | join: ' ' | downcase }}">
+          <li class="work" data-tags="{%- for tag in work.tags -%}
+            {{ tag | slugify | append: ' ' }}
+          {%- endfor -%}">
             <div class="card">
               <div class="first-row">
                 {%- if work.url -%}
