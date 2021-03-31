@@ -106,7 +106,7 @@ function resumeEvents() {
     work.addEventListener("mouseover", (e) => {
       work.classList.add("active");
       document.querySelectorAll(".skills-list .skill").forEach((skill) => {
-        if (work.dataset.tags.includes(skill.dataset.tag))
+        if (work.dataset.tags.includes(skill.dataset.tag+" "))
           skill.classList.add("active");
       });
     });
