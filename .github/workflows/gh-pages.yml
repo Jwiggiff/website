@@ -21,9 +21,8 @@ jobs:
       #   with:
       #     chrome-version: stable
       # - run: chrome --version
-      - run: ls /usr/local/share
-      - run: ls /usr/bin
-      - run: echo "PUPPETEER_EXECUTABLE_PATH=$CHROMEWEBDRIVER/chromedriver" >> $GITHUB_ENV
+      - run: ls /usr/bin | grep "chrom"
+      - run: echo "PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser" >> $GITHUB_ENV
       # - run: echo "$CHROMEWEBDRIVER"
       # - uses: helaili/jekyll-action@v2
       #   with:
