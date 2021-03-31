@@ -16,11 +16,12 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
           restore-keys: |
             ${{ runner.os }}-gems-
-      - uses: browser-actions/setup-chrome@latest
-        with:
-          chrome-version: stable
-      - run: chrome --version
-      - run: echo "PUPPETEER_EXECUTABLE_PATH=$(which chrome)" >> $GITHUB_ENV
+      # - uses: browser-actions/setup-chrome@latest
+      #   with:
+      #     chrome-version: stable
+      # - run: chrome --version
+      # - run: echo "PUPPETEER_EXECUTABLE_PATH=$(which chrome)" >> $GITHUB_ENV
+      - run: echo "$CHROMEWEBDRIVER"
       - uses: helaili/jekyll-action@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
