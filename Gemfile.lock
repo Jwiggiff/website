@@ -28,7 +28,7 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 2.0)
-    jekyll-pdf_generator (0.1.1)
+    jekyll-pdf_generator (0.1.2)
       jekyll (~> 4.1)
       puppeteer-ruby (~> 0.31.5)
     jekyll-sass-converter (2.1.0)
