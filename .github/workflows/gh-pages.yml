@@ -11,22 +11,16 @@ jobs:
     steps:
       - name: 📂 setup
         uses: actions/checkout@v2
-      # - uses: actions/cache@v2
+        
+      # - name: 💾 cache
+      #   uses: actions/cache@v2
       #   with:
       #     path: vendor/bundle
       #     key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
       #     restore-keys: |
       #       ${{ runner.os }}-gems-
-      # - uses: browser-actions/setup-chrome@latest
-      #   with:
-      #     chrome-version: stable
-      # - run: chrome --version
-      - run: ls /usr/bin | grep "chrom"
+
       - run: echo "PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser" >> $GITHUB_ENV
-      # - run: echo "$CHROMEWEBDRIVER"
-      # - uses: helaili/jekyll-action@v2
-      #   with:
-      #     token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 💎 setup ruby
         uses: ruby/setup-ruby@v1
