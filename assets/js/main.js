@@ -91,7 +91,7 @@ function resumeEvents() {
       skill.classList.add("active");
       document
         .querySelectorAll(
-          `.experience-list .work[data-tags*="${skill.dataset.tag}"]`
+          `.experience-list .work[data-tags*="${skill.dataset.tag} "]`
         )
         .forEach((el) => el.classList.add("active"));
     });
