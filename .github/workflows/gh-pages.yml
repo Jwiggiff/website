@@ -12,6 +12,8 @@ jobs:
       - uses: actions/checkout@v2
       - uses: browser-actions/setup-chrome@latest
       - run: chrome --version
+        with:
+          chrome-version: stable
       - run: echo "PUPPETEER_EXECUTABLE_PATH=$(which chrome)" >> $GITHUB_ENV
       - uses: helaili/jekyll-action@v2
         with:
