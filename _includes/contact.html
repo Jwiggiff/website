@@ -4,17 +4,9 @@
     target="_blank"
     href="{{ contact.url }}"
     class="contact-link"
-    title="{{ contact.name }}"
   >
-    {% if contact.not_fa == true %}
-    <img
-      style="width: 75%; filter: invert(1)"
-      src="{{ contact.icon | absolute_url }}"
-      alt="{{ contact.name }}"
-    />
-    {% else %}
     <i class="{{ contact.icon }}"></i>
-    {% endif %}
+    <span class="tooltip left">{{ contact.name }}</span>
   </a>
   {%- endfor -%}
 </div>

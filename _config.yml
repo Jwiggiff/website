@@ -16,7 +16,7 @@ contact_links:
   - name: Linkedin
     url: https://www.linkedin.com/in/josh-friedman-1b9222199/
     icon: fab fa-linkedin
-  - name: Github
+  - name: GitHub
     url: https://github.com/Jwiggiff
     icon: fab fa-github
   - name: CodePen
@@ -24,8 +24,7 @@ contact_links:
     icon: fab fa-codepen
   - name: Fiverr
     url: https://www.fiverr.com/share/Wo8dq7
-    icon: https://unpkg.com/simple-icons@v4/icons/fiverr.svg
-    not_fa: true
+    icon: fac fa-fiverr
 
 defaults:
   - scope:
