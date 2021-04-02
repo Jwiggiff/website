@@ -1,3 +1,13 @@
+- title: DashTab
+  tags:
+    - HTML
+    - CSS
+    - JavaScript
+    - Chrome Extension
+    - APIs
+  description: >
+    DashTab is a chrome extension that changes your "new tab" page to a page with your calendar, weather, shortcuts, and more.
+  url: https://chrome.google.com/webstore/detail/dashtab/eikheedcbbnljjnifbekbccllgjnggak
 - title: StudyTime
   tags:
     - Dart
