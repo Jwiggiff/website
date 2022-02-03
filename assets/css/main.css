@@ -215,9 +215,17 @@ a:hover .tooltip { width: auto; height: auto; clip: initial; opacity: 1; visibil
 
 @media screen and (max-width: 600px) { .resume { min-height: 0; } .resume .view-pdf { display: block; } .resume .print { display: none; } .resume .wrapper { display: none; } }
 
-.projects .cards { display: flex; justify-content: center; align-items: center; flex-grow: 1; }
+.projects .card-container { margin: auto; max-width: 100%; position: relative; }
 
-.projects .card { width: 300px; height: 400px; border-radius: 10px; padding: 1rem; background: linear-gradient(45deg, #161616, #424242); color: white; position: relative; box-shadow: -4px 0 8px 4px rgba(0, 0, 0, 0.3); transition: transform 0.2s ease; }
+.projects .card-container::after { content: ""; position: absolute; top: 4rem; right: 0; height: calc(100% - 4.5rem); width: 8rem; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), black); pointer-events: none; }
+
+.projects .cards { display: flex; align-items: center; margin: auto 0 auto 4rem; padding: 4rem 4rem 0.5rem 0; overflow-y: hidden; overflow-x: scroll; max-width: 100%; position: relative; }
+
+.projects .cards::-webkit-scrollbar { height: 4px; }
+
+.projects .cards::-webkit-scrollbar-thumb { border-radius: 10px; background-color: black; }
+
+.projects .card { min-width: 300px; height: 400px; border-radius: 10px; padding: 1rem; background: linear-gradient(45deg, #161616, #424242); color: white; position: relative; box-shadow: -4px 0 8px 4px rgba(0, 0, 0, 0.3); transition: transform 0.2s ease; }
 
 .projects .card:not(:first-child) { margin-left: -150px; }
 
