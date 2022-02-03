@@ -1,22 +1,24 @@
 <section id="projects" class="projects">
   <h1 class="title">Projects</h1>
 
-  <div class="cards">
-    {%- for project in site.data.projects -%}
-    <div class="card">
-      <div class="card-title">{{ project.title }}</div>
-      <div class="card-tags">
-        {%- for tag in project.tags -%}
-        <span class="tag">{{ tag }}</span>
-        {%- endfor -%}
+  <div class="card-container">
+    <div class="cards">
+      {%- for project in site.data.projects -%}
+      <div class="card">
+        <div class="card-title">{{ project.title }}</div>
+        <div class="card-tags">
+          {%- for tag in project.tags -%}
+          <span class="tag">{{ tag }}</span>
+          {%- endfor -%}
+        </div>
+        <div class="card-description">{{ project.description }}</div>
+        <div class="card-link">
+          <a target="_blank" href="{{ project.url | absolute_url }}"
+            >View Project</a
+          >
+        </div>
       </div>
-      <div class="card-description">{{ project.description }}</div>
-      <div class="card-link">
-        <a target="_blank" href="{{ project.url | absolute_url }}"
-          >View Project</a
-        >
-      </div>
+      {%- endfor -%}
     </div>
-    {%- endfor -%}
   </div>
 </section>

@@ -1,12 +1,46 @@
 .projects {
+  .card-container {
+    margin: auto;
+    max-width: 100%;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 4rem;
+      right: 0;
+      height: calc(100% - 4.5rem);
+      width: 8rem;
+      background-image: linear-gradient(
+        to right,
+        rgba(black, 0),
+        rgba(black, 1)
+      );
+      pointer-events: none;
+    }
+  }
   .cards {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-grow: 1;
+
+    margin: auto 0 auto 4rem;
+    // margin-left: 4rem;
+    padding: 4rem 4rem 0.5rem 0;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    max-width: 100%;
+    position: relative;
+
+    &::-webkit-scrollbar {
+      height: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: black;
+    }
   }
   .card {
-    width: 300px;
+    min-width: 300px;
     height: 400px;
     border-radius: 10px;
     padding: 1rem;
