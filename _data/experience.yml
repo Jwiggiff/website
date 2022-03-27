@@ -1,3 +1,21 @@
+- organization: Engineering Society Software Development Team
+  url: https://www.engsoc.queensu.ca/
+  title: Mobile Development Team Meber
+  date: September 2021 - Present
+  location: Kingston, Ontario
+  description:
+    - Created a Tinder-style app to help students find housemates at Queen's University
+    - Implemented several features including filtering users by preferences and matching/unmatching users
+    - Created frontend to swipe on users
+  tags:
+    - Flutter
+    - Firebase
+    - Git
+    - Communication and presentation skills
+    - Critical thinking
+    - Problem solving
+    - Teamwork skills
+
 - organization: The Ivy Day Camp
   url: https://theivy.ca/
   title: Program Specialist
@@ -18,7 +36,7 @@
 - organization: Incendium Academy
   url: https://incendiumacademy.org/
   title: Web Developer
-  date: October 2020 - Present
+  date: October 2020 - September 2021
   location: Toronto, Ontario
   description:
     - Designed and created a highly interactive front-end site
@@ -40,7 +58,7 @@
 - organization: Live2Give
   url: https://canada.ncsy.org/live2give-for-boys/
   title: Volunteer
-  date: October 2017 - Present
+  date: October 2017 - June 2021
   location: Toronto, Ontario
   description:
     - Engaged in weekly volunteer initiatives such as packaging food at food banks, making blankets, scarves, and hats for homeless people, and packaging food baskets for the elderly
