@@ -64,14 +64,14 @@
   description: >
     AI Flappy Bird is an implementation of the Neuro-Evolution machinme learning algorithm to learn to play Flappy Bird in the browser.
   url: https://github.com/Jwiggiff/AI-Flappy-Bird
-- title: Clocks
-  tags:
-    - HTML
-    - CSS
-    - JavaScript
-  description: >
-    A collection of visually interesting and creative clocks in the browser.
-  url: https://codepen.io/jwiggiff/pen/ZEQBjQy
+# - title: Clocks
+#   tags:
+#     - HTML
+#     - CSS
+#     - JavaScript
+#   description: >
+#     A collection of visually interesting and creative clocks in the browser.
+#   url: https://codepen.io/jwiggiff/pen/ZEQBjQy
 - title: JARVIS
   tags:
     - JavaScript
