@@ -1,0 +1,111 @@
+@use "./variables" as *;
+
+.landing {
+  display: grid;
+
+  h1 {
+    align-self: flex-end;
+    font-size: clamp(2.5em, 5vw, 5em);
+    line-height: 1;
+    position: relative;
+    isolation: isolate;
+    width: max-content;
+    pointer-events: none;
+
+    > span {
+      display: inline-block;
+      animation: drop-in 0.8s ease-in forwards;
+
+      @keyframes drop-in {
+        0% {
+          translate: 0 -100vh;
+          rotate: 0deg;
+        }
+        70% {
+          translate: 0 0;
+          rotate: 0deg;
+        }
+        80% {
+          translate: 0 -0.25em;
+          rotate: -2deg;
+        }
+        90% {
+          translate: 0 -0.25em;
+          rotate: 2deg;
+        }
+        100% {
+          scale: 1 1;
+          translate: 0 0;
+        }
+      }
+    }
+
+    .backdrop {
+      position: absolute;
+      bottom: 0;
+      font-size: 2em;
+      line-height: 0.85;
+      letter-spacing: -5px;
+      z-index: -1;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      opacity: 0.5;
+
+      span {
+        color: $lightblue;
+        pointer-events: all;
+
+        &.animating {
+          animation: squish 0.5s ease;
+
+          @keyframes squish {
+            0% {
+              scale: 1 1;
+            }
+            50% {
+              scale: 1.1 0.9;
+            }
+            100% {
+              scale: 1 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  p {
+    font-size: clamp(1em, 2vw, 2em);
+    position: relative;
+    width: max-content;
+    height: max-content;
+
+    &:hover::after {
+      opacity: 1;
+    }
+
+    &::after {
+      width: 100%;
+      display: block;
+      content: "Computer Nerd";
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      background-color: $lightblue;
+      clip-path: circle(50px at var(--x) var(--y));
+      transition: opacity 0.2s ease;
+    }
+  }
+}
+
+@include mq($mobile) {
+  .landing {
+    justify-content: center;
+
+    p {
+      justify-self: center;
+    }
+  }
+}

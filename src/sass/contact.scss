@@ -1,0 +1,66 @@
+@use "./variables" as *;
+
+.contact {
+  p {
+    font-size: clamp(1.25em, 2vw, 2em);
+
+    &::before {
+      content: "Available for Freelance Work!";
+    }
+  }
+
+  .socials {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 2rem;
+    gap: 3rem;
+
+    a {
+      line-height: 1;
+      font-size: 3em;
+      padding: 0.75rem;
+      border-radius: 12px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: $text-color;
+        color: $lightblue;
+      }
+    }
+  }
+
+  button {
+    font-size: 1.5em;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    border: 2px solid;
+    position: relative;
+    isolation: isolate;
+    background-color: $bg-color;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &:hover::after {
+      opacity: 0.25;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      inset: -2px;
+      border-radius: inherit;
+      background-image: radial-gradient(
+        circle at var(--x) var(--y),
+        $lightblue,
+        transparent
+      );
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 0.3s;
+    }
+  }
+}

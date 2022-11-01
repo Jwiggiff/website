@@ -1,0 +1,108 @@
+@use "./variables" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+}
+
+body,
+#root {
+  min-height: 100vh;
+  width: 100%;
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+}
+
+#root {
+  position: relative;
+  isolation: isolate;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(img/code\ 2.png);
+    background-size: 100vw;
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    opacity: 0.04;
+    z-index: -1;
+  }
+}
+
+section {
+  scroll-snap-align: start;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  padding: clamp(1rem, 5vw, 5rem) clamp(2rem, 10vw, 10rem);
+  padding-left: 10rem;
+
+  @include mq($mobile) {
+    padding-left: clamp(2rem, 10vw, 10rem);
+  }
+}
+
+canvas + canvas {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: $text-color;
+}
+
+.container {
+  margin-block: 2em;
+  max-width: max-content;
+  display: grid;
+  place-items: center;
+}
+
+.float-text {
+  position: relative;
+
+  &::before {
+    font-family: $handwriting;
+    color: $lightblue;
+    font-size: 0.75em;
+    position: absolute;
+    top: -1.25em;
+    left: -3em;
+    rotate: -10deg;
+  }
+
+  &::after {
+    font-family: $handwriting;
+    color: $lightblue;
+    font-size: 0.75em;
+    position: absolute;
+    top: -1em;
+    right: 2em;
+    rotate: 10deg;
+  }
+}
+
+.p5-sketch {
+  margin: clamp(-5rem, -5vw, -1rem) clamp(-10rem, -10vw, -2rem);
+  font-size: clamp(5rem, 10vw, 10rem);
+  touch-action: none;
+}
