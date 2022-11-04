@@ -2,29 +2,29 @@
   description: >
     A live transcription and translation tool for lecturers.
   url: https://iris-translate-front.herokuapp.com
-  image: img/iris.png
+  image: "/assets/img/iris.png"
 - title: Jumper
   description: >
     A platform jumper game that has a new challenge each day.
   url: https://jumperio.herokuapp.com
-  image: img/jumper.png
+  image: "/assets/img/jumper.png"
 - title: Volunteerism
   description: >
     A website to find impactful and meaningful volunteer opportunities.
   url: https://github.com/Jwiggiff/lyonhacks-volunteer
-  image: img/volunteerism.png
+  image: "/assets/img/volunteerism.png"
 - title: DashTab
   description: >
     A custom New Tab page for Chrome with calendar, shortcuts and more.
   url: https://chrome.google.com/webstore/detail/dashtab/eikheedcbbnljjnifbekbccllgjnggak
-  image: img/dashtab.png
+  image: "/assets/img/dashtab.png"
 - title: Flappy AI
   description: >
     A Neuro-Evolution model that learns to play Flappy Bird.
   url: https://github.com/Jwiggiff/AI-Flappy-Bird\
-  image: img/flappy.png
+  image: "/assets/img/flappy.png"
 - title: My Website
   description: >
     See how I made this website!
   url: https://github.com/Jwiggiff/website
-  image: img/website.png
+  image: "/assets/img/website.png"

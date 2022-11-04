@@ -25,13 +25,6 @@ export default function Projects({ onScrollIn }) {
     <section className="projects" id="projects">
       <Heading>Projects</Heading>
       <ul className="projects-list" ref={projectsList}>
-        {/* <Card
-          title={"Iris"}
-          description={
-            "A live transcription and translation tool for lecturers."
-          }
-          image={irisImg}
-        /> */}
         {projects.map((project, i) => (
           <Card key={i} {...project} />
         ))}
