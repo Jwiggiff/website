@@ -9,8 +9,31 @@ import { useEffect, useRef } from "react";
 import Heading from "./_components/Heading";
 import contact from "./_data/contact.yml";
 
+import Resume from "./Resume";
+
+import * as ReactDOMServer from "react-dom/server";
+
 export default function Contact({ onScrollIn }) {
   const buttonRef = useRef(null);
+
+  const downloadResume = () => {
+    const url = URL.createObjectURL(
+      new Blob(
+        [
+          ReactDOMServer.renderToStaticMarkup(<Resume />).replaceAll(
+            "&quot;",
+            '"'
+          ),
+        ],
+        {
+          type: "text/html",
+        }
+      )
+    );
+
+    const win = window.open(url);
+    win.addEventListener("load", () => setTimeout(() => win.print(), 500));
+  };
 
   useEffect(() => {
     buttonRef.current.onmousemove = ({ clientX, clientY }) => {
@@ -36,7 +59,7 @@ export default function Contact({ onScrollIn }) {
             <FontAwesomeIcon icon={faCodepen} />
           </a>
         </div>
-        <button id="resume-dl" ref={buttonRef}>
+        <button id="resume-dl" ref={buttonRef} onClick={downloadResume}>
           <FontAwesomeIcon icon={faCircleDown} />
           Resume
         </button>

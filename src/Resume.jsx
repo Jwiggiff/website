@@ -1,14 +1,23 @@
 import education from "./_data/education.yml";
 import experience from "./_data/experience.yml";
-import skills from "./_data/skills.yml";
-import projects from "./_data/projects.yml";
 import config from "./_data/resume.yml";
+import skills from "./_data/skills.yml";
 
-import styles from "./sass/resume.scss";
+import {
+  faEnvelope,
+  faGlobe,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect } from "react";
+import styles from "./sass/resume.scss?inline";
 
-export default function Resume() {
+export default function Resume({ window }) {
+  useEffect(() => window.print(), []);
+
   return (
     <>
+      <style>{styles}</style>
       <header>
         <div className="left">
           <div className="name">
@@ -17,15 +26,15 @@ export default function Resume() {
           </div>
           <div className="links">
             <span>
-              <i className="fas fa-globe"></i> {config.url}
+              <FontAwesomeIcon icon={faGlobe} /> {config.url}
             </span>
             <div className="clear"></div>
             <span>
-              <i className="fas fa-envelope"></i> {config.email}
+              <FontAwesomeIcon icon={faEnvelope} /> {config.email}
             </span>
             <div className="clear"></div>
             <span>
-              <i className="fas fa-phone-alt"></i> {config.phone}
+              <FontAwesomeIcon icon={faPhone} /> {config.phone}
             </span>
           </div>
         </div>
