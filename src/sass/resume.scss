@@ -143,8 +143,8 @@ section {
 }
 .skills-list {
   margin-top: 10px;
-  display: flex;
-  flex-flow: column wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 0.25rem;
   max-height: 12rem;
 }
