@@ -48,7 +48,7 @@
     .card {
       margin: 2px;
       aspect-ratio: 16 / 9;
-      width: 20rem;
+      width: clamp(15rem, 16vw, 20rem);
       background-repeat: no-repeat;
       background-size: cover;
       background-image: linear-gradient(
@@ -58,30 +58,27 @@
         var(--bg-img);
         background-position: center;
       border-radius: inherit;
-      display: grid;
-      place-items: center;
       position: relative;
       text-align: center;
+      padding: 0.5rem;
 
       h4 {
-        font-size: 2.5em;
+        font-size: clamp(2rem, 2vw, 2.5rem);
         font-weight: 700;
+        translate: 0 1em;
         transition: translate 0.2s ease;
       }
 
       p {
-        position: absolute;
-        max-width: calc(100% - 1rem);
         opacity: 0;
         transition: opacity 0.2s ease, translate 0.2s ease;
       }
 
       @include mq($mobile) {
         h4 {
-          translate: 0 -0.7em;
+          translate: 0 0em;
         }
         p {
-          translate: 0 1em;
           opacity: 1;
         }
       }
@@ -90,10 +87,9 @@
         cursor: pointer;
 
         h4 {
-          translate: 0 -0.7em;
+          translate: 0 0;
         }
         p {
-          translate: 0 1em;
           opacity: 1;
         }
       }
