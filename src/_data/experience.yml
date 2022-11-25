@@ -1,37 +1,32 @@
 - organization: Engineering Society Software Development Team
   url: https://www.engsoc.queensu.ca/
+  title: Team Manager
+  date: September 2022 - Present
+  location: Kingston, Ontario
+  description:
+    - Manage three seperate project teams, a total of 15 people
+    - Implement project management using kanban boards in Notion
+    - Implement communication channels for each team using Slack
+
+- organization: Engineering Society Software Development Team
+  url: https://www.engsoc.queensu.ca/
   title: Mobile Development Team Member
-  date: September 2021 - Present
+  date: September 2021 - April 2022
   location: Kingston, Ontario
   description:
     - Created a Tinder-style app to help students find housemates at Queen's University
     - Implemented several features including filtering users by preferences and matching/unmatching users
     - Created frontend to swipe on users
-  tags:
-    - Flutter
-    - Firebase
-    - Git
-    - Communication and presentation skills
-    - Critical thinking
-    - Problem solving
-    - Teamwork skills
 
 - organization: The Ivy Day Camp
   url: https://theivy.ca/
   title: Program Specialist
-  date: July 2021 - August 2021
+  date: July 2021 - August 2021, July 2022 - August 2022
   location: Toronto, Ontario
   description:
     - Organized and planned sports activities for campers ages 4-14
     - Followed standard COVID-19 protocols when dealing with all campers and staff
-  tags:
-    - Interpersonal skills
-    - Communication and presentation skills
-    - Critical thinking
-    - Problem solving
-    - Engage & motivate groups
-    - Leadership skills
-    - Teamwork skills
+    - Helped run various spirit days and camp-wide events
 
 - organization: Incendium Academy
   url: https://incendiumacademy.org/
@@ -39,21 +34,9 @@
   date: October 2020 - September 2021
   location: Toronto, Ontario
   description:
-    - Designed and created a highly interactive front-end site
+    - Designed and created a highly interactive front-end site for high school students to study for academic competitions in STEM
     - Maintained standard SEO and mobile-friendly standards on the site
-    - Structured and programed a back-end database to store user data
-  tags:
-    - JavaScript
-    - HTML
-    - CSS
-    - Jekyll
-    - Git
-    - Firebase
-    - SEO
-    - Critical thinking
-    - Problem solving
-    - Leadership skills
-    - Teamwork skills
+    - Structured and programed a back-end database to store user data and lesson content
 
 - organization: Live2Give
   url: https://canada.ncsy.org/live2give-for-boys/
@@ -63,13 +46,6 @@
   description:
     - Engaged in weekly volunteer initiatives such as packaging food at food banks, making blankets, scarves, and hats for homeless people, and packaging food baskets for the elderly
     - Helped organize initiatives and fundraisers in the community such as Jump4Chai
-  tags:
-    - Interpersonal skills
-    - Communication and presentation skills
-    - Problem solving
-    - Engage & motivate groups
-    - Leadership skills
-    - Teamwork skills
 
 - organization: Socially-Distanced Backyard Karate Lessons
   title: Sensei
@@ -79,12 +55,6 @@
     - Self-employed
     - Led fun and engaging karate classes in backyards around my neighbourhood
     - Taught several classes of students aged 4-12
-  tags:
-    - Interpersonal skills
-    - Communication and presentation skills
-    - Critical thinking
-    - Engage & motivate groups
-    - Leadership skills
 
 - organization: One Stop Therapy
   url: https://www.onestoptherapy.ca/
@@ -92,19 +62,10 @@
   date: June 2020 - August 2020
   location: Vancouver, British Columbia
   description:
+    - Implemented site-wide search using PHP and existing search code
     - Updated several pages and elements on a WordPress site
     - Fixed back-end and front-end bugs
     - Provided technical support for customers on the site
-  tags:
-    - JavaScript
-    - HTML
-    - CSS
-    - PHP
-    - WordPress
-    - FTP
-    - SEO
-    - Critical thinking
-    - Problem solving
 
 - organization: HebrewCrew
   title: Assistant Hebrew Teacher
@@ -114,11 +75,6 @@
     - Taught children to read & write in Hebrew
     - Taught children the stories from the Torah
     - Taught children the history of Jewish holidays
-  tags:
-    - Interpersonal skills
-    - Communication and presentation skills
-    - Engage & motivate groups
-    - Leadership skills
 
 - organization: Camp Timberlane
   url: https://camptimberlane.ca/
@@ -130,13 +86,6 @@
     - Helped plan and run various activities for the entire camp
     - Helped facilitate fun activities such as sailing for campers
     - Worked on the tech team for various productions, creating queues for screens and music on stage
-  tags:
-    - Interpersonal skills
-    - Critical thinking
-    - Problem solving
-    - Engage & motivate groups
-    - Leadership skills
-    - First Aid & CPR Certified
 
 - organization: North Toronto Karate School
   url: https://www.northtorontokarate.com/home.htm
@@ -146,11 +95,4 @@
   description:
     - Taught karate classes to people aged 5-40+
     - Helped facilitate school performances
-    - Helped facilitate and organize tournaments
-  tags:
-    - Interpersonal skills
-    - Communication and presentation skills
-    - Critical thinking
-    - Problem solving
-    - Engage & motivate groups
-    - Leadership skills
+    - Helped run and organize tournaments

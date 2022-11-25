@@ -47,12 +47,22 @@ header {
 
 .right {
   float: right;
+  text-align: right;
+
+  span {
+    justify-content: end;
+  }
 }
 
-span i {
+span {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+
+  i {
   width: 24px;
   text-align: center;
-}
+}}
 
 .links {
   border-left: 1px solid black;
@@ -74,6 +84,10 @@ section {
       border-bottom: 5px solid black;
     }
   }
+}
+
+#intro p {
+  text-align: center;
 }
 
 .experience {
@@ -135,6 +149,11 @@ section {
     font-size: 0.75em;
     font-style: italic;
     float: left;
+  }
+  .average {
+    font-size: 0.75em;
+    font-style: italic;
+    float: right;
   }
 }
 

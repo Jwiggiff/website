@@ -3,9 +3,11 @@ import experience from "./_data/experience.yml";
 import config from "./_data/resume.yml";
 import skills from "./_data/skills.yml";
 
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
   faGlobe,
+  faLocationDot,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -39,12 +41,23 @@ export default function Resume({ window }) {
           </div>
         </div>
         <div className="right">
-          {config.address.map((line, index) => (
-            <p key={index}>{line}</p>
-          ))}
+          <span>
+            {config.location} <FontAwesomeIcon icon={faLocationDot} />
+          </span>
+          <div className="clear"></div>
+          <span>
+            {config.linkedin} <FontAwesomeIcon icon={faLinkedin} />
+          </span>
+          <div className="clear"></div>
+          <span>
+            {config.github} <FontAwesomeIcon icon={faGithub} />
+          </span>
         </div>
         <div className="clear"></div>
       </header>
+      <section id="intro">
+        <p>{config.intro}</p>
+      </section>
       <section id="experience">
         <h2>Experience</h2>
         {experience.map((job, index) => (
@@ -75,6 +88,11 @@ export default function Resume({ window }) {
             <span className="date">{school.date}</span>
             <div className="clear"></div>
             <span className="location">{school.location}</span>
+            {(school.gpa || school.average) && (
+              <span className="average">
+                {school.gpa ? `GPA: ${school.gpa}` : `Avg: ${school.average}`}
+              </span>
+            )}
             <div className="clear"></div>
           </div>
         ))}

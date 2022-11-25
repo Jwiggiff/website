@@ -1,10 +1,12 @@
-- name: Queen's University (B.A.Sc. in Computer Engineering)
+- name: Queen's University (B.A.Sc. in Computer Engineering, Innovation Stream)
   date: 2021 - Present
   location: Kingston, Ontario
+  gpa: 4.13/4.3
 
 - name: William Lyon Mackenzie C.I. (MaCS Program)
   date: 2017 - 2021
   location: Toronto, Ontario
+  average: 97%
 
 - name: The Leo Baeck Day School
   date: 2008 - 2017
