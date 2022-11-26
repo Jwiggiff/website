@@ -82,8 +82,26 @@
     height: max-content;
     animation: fadeIn 0.5s ease forwards;
 
-    &::first-letter {
+    span {
+      display: inline-block;
       font-size: 1.5em;
+      animation: wave 2s infinite;
+      transform-origin: 80% 80%;
+
+      @keyframes wave {
+        0% {
+          rotate: 0deg;
+        }
+        25% {
+          rotate: -15deg;
+        }
+        50% {
+          rotate: 10deg;
+        }
+        75% {
+          rotate: 0deg;
+        }
+      }
     }
 
     @keyframes fadeIn {
