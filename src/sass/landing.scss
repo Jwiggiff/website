@@ -76,26 +76,25 @@
   }
 
   p {
-    font-size: clamp(1em, 2vw, 2em);
+    font-size: clamp(0.75em, 1.5vw, 1.5em);
     position: relative;
-    width: max-content;
+    max-width: 60ch;
     height: max-content;
+    animation: fadeIn 0.5s ease forwards;
 
-    &:hover::after {
-      opacity: 1;
+    &::first-letter {
+      font-size: 1.5em;
     }
 
-    &::after {
-      width: 100%;
-      display: block;
-      content: "Computer Nerd";
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0;
-      background-color: $lightblue;
-      clip-path: circle(50px at var(--x) var(--y));
-      transition: opacity 0.2s ease;
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        translate: 0 -10px;
+      }
+      100% {
+        opacity: 1;
+        translate: 0;
+      }
     }
   }
 }
@@ -106,6 +105,7 @@
 
     p {
       justify-self: center;
+      text-align: center;
     }
   }
 }

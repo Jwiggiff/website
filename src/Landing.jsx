@@ -9,14 +9,6 @@ export default function Landing({ onScrollIn }) {
       child.onmouseenter = () => child.classList.add("animating");
       child.onanimationend = () => child.classList.remove("animating");
     });
-
-    pRef.current.onmousemove = ({ clientX, clientY }) => {
-      let rect = pRef.current.getBoundingClientRect();
-      let x = clientX - rect.x;
-      let y = clientY - rect.y;
-      pRef.current.style.setProperty("--x", `${x}px`);
-      pRef.current.style.setProperty("--y", `${y}px`);
-    };
   }, []);
 
   return (
@@ -30,7 +22,10 @@ export default function Landing({ onScrollIn }) {
         </div>
         <span>Josh Friedman</span>
       </h1>
-      <p ref={pRef}>Full Stack Developer</p>
+      <p>
+        👋 Hey! I'm Josh, a full stack developer based in Toronto. I'm currently
+        studying Computer Engineering at Queen's University in Kingston.
+      </p>
     </section>
   );
 }
