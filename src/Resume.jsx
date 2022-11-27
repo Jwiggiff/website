@@ -8,18 +8,16 @@ import {
   faEnvelope,
   faGlobe,
   faLocationDot,
-  faPhone,
+  faPhone
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect } from "react";
-import styles from "./sass/resume.scss?inline";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./sass/resume.scss";
 
-export default function Resume({ window }) {
-  useEffect(() => window.print(), []);
-
+function Resume() {
   return (
     <>
-      <style>{styles}</style>
       <header>
         <div className="left">
           <div className="name">
@@ -110,3 +108,9 @@ export default function Resume({ window }) {
     </>
   );
 }
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <Resume />
+  </React.StrictMode>
+);
