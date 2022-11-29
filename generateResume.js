@@ -16,7 +16,7 @@ let server = app.listen(3000);
   });
 
   await page.pdf({
-    path: "./dist/assets/resume.pdf",
+    path: "./dist/assets/JoshFriedman_resume.pdf",
     format: "letter",
   });
 

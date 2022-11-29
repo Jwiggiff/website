@@ -1,9 +1,16 @@
-- HTML
-- CSS
-- JavaScript
-- React
-- NodeJS
-- Flutter
-- WordPress
-- Git
-- Firebase
+languages:
+  - "HTML (4 years)"
+  - "CSS (4 years)"
+  - "JavaScript (6 years)"
+  - "Java (4 years)"
+
+frameworks:
+  - "React (2 years)"
+  - "NodeJS (5 years)"
+  - "Flutter (2 years)"
+
+technologies:
+  - "WordPress (2 years)"
+  - "Git (2 years)"
+  - "Firebase (4 years)"
+  - "Linux (3 years"

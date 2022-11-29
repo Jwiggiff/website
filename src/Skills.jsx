@@ -23,12 +23,28 @@ export default function Skills({ onScrollIn }) {
   return (
     <section className="skills" id="skills">
       <Heading>Skills</Heading>
-      <div className="container">
-        <ul ref={skillsList} className="skills-list float-text">
-          {skills.map((skill, i) => (
-            <li key={i}>{skill}</li>
-          ))}
-        </ul>
+      <div ref={skillsList} className="container float-text">
+        {Object.keys(skills).map((cat, index) => (
+          <div className="row" key={index}>
+            <ul className="skills-list">
+              {skills[cat].map((skill, i) => (
+                <li key={i}>{skill.split(":")[0]}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+        {/* <div className="row">
+          Languages:
+          <ul></ul>
+        </div>
+        <div className="row">
+          Frameworks:
+          <ul></ul>
+        </div>
+        <div className="row">
+          Tools:
+          <ul></ul>
+        </div> */}
       </div>
     </section>
   );

@@ -19,6 +19,9 @@ svg {
   width: 1em;
   height: 1em;
 }
+a {
+  color: inherit;
+}
 
 header {
   width: 100%;
@@ -71,9 +74,10 @@ span {
 }
 
 section {
-  margin-top: 20px;
+  margin-top: 15px;
 
   h2 {
+    font-size: 1.4em;
     display: inline-block;
 
     &::after {
@@ -155,6 +159,11 @@ section {
     font-style: italic;
     float: right;
   }
+  .awards {
+    margin-block-start: 2px;
+    margin-inline-start: 24px;
+    font-size: 0.9em;
+  }
 }
 
 #skills {
@@ -163,9 +172,24 @@ section {
 .skills-list {
   margin-top: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
   gap: 0.25rem;
   max-height: 12rem;
+}
+.skills__category {
+  strong {
+    display: inline;
+    text-transform: capitalize;
+  }
+
+  p {
+    display: inline;
+  }
+
+  ul {
+    list-style: none;
+    margin-left: 1rem;
+  }
 }
 .skill {
   margin-left: 1.5rem;

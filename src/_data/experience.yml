@@ -1,12 +1,21 @@
+- organization: Faculty of Engineering and Applied Science
+  title: Web Migration Member
+  date: September 2022 - Present
+  location: Kingston, Ontario
+  description:
+    - Migrated over 30 pages of content into the new Faculty website using CascadeCMS
+    - Took design initiative on over 10 landing pages
+    - I was chosen as a team lead to mentor other team members and help with design decisions and technical difficulties
+
 - organization: Engineering Society Software Development Team
   url: https://www.engsoc.queensu.ca/
   title: Team Manager
   date: September 2022 - Present
   location: Kingston, Ontario
   description:
-    - Manage three seperate project teams, a total of 15 people
-    - Implement project management using kanban boards in Notion
-    - Implement communication channels for each team using Slack
+    - Led 3 separate project teams totalling 15 engineers
+    - Ensured clear project requirements were set
+    - Implemented a clear project management structure using Notion and Slack to ensure each team member contributed and their learning was supported by others
 
 - organization: Engineering Society Software Development Team
   url: https://www.engsoc.queensu.ca/
@@ -14,9 +23,9 @@
   date: September 2021 - April 2022
   location: Kingston, Ontario
   description:
-    - Created a Tinder-style app to help students find housemates at Queen's University
-    - Implemented several features including filtering users by preferences and matching/unmatching users
-    - Created frontend to swipe on users
+    - Created a Tinder-style app to help students find housemates using Flutter
+    - Worked with a Firebase database to search and filter users based on a user's saved preferences
+    - Created an interactive front-end swiping page
 
 - organization: The Ivy Day Camp
   url: https://theivy.ca/
@@ -24,9 +33,8 @@
   date: July 2021 - August 2021, July 2022 - August 2022
   location: Toronto, Ontario
   description:
-    - Organized and planned sports activities for campers ages 4-14
-    - Followed standard COVID-19 protocols when dealing with all campers and staff
-    - Helped run various spirit days and camp-wide events
+    - Created engaging sports programming for campers aged 4-14
+    - Organized and ran several spirit days and camp-wide competitions
 
 - organization: Incendium Academy
   url: https://incendiumacademy.org/
@@ -34,27 +42,16 @@
   date: October 2020 - September 2021
   location: Toronto, Ontario
   description:
-    - Designed and created a highly interactive front-end site for high school students to study for academic competitions in STEM
-    - Maintained standard SEO and mobile-friendly standards on the site
-    - Structured and programed a back-end database to store user data and lesson content
-
-- organization: Live2Give
-  url: https://canada.ncsy.org/live2give-for-boys/
-  title: Volunteer
-  date: October 2017 - June 2021
-  location: Toronto, Ontario
-  description:
-    - Engaged in weekly volunteer initiatives such as packaging food at food banks, making blankets, scarves, and hats for homeless people, and packaging food baskets for the elderly
-    - Helped organize initiatives and fundraisers in the community such as Jump4Chai
+    - Designed and programmed a front-end website using vanilla HTML/CSS/JS while maintaining good SEO and mobile-friendly practices
+    - Structured and programmed a back-end database to store user data and lesson content
 
 - organization: Socially-Distanced Backyard Karate Lessons
   title: Sensei
   date: June 2020 - October 2020
   location: Toronto, Ontario
   description:
-    - Self-employed
-    - Led fun and engaging karate classes in backyards around my neighbourhood
-    - Taught several classes of students aged 4-12
+    - Self-run business, teaching several classes of students aged 4-12
+    - Engaged young kids in karate classes throughout the summer
 
 - organization: One Stop Therapy
   url: https://www.onestoptherapy.ca/
@@ -62,37 +59,6 @@
   date: June 2020 - August 2020
   location: Vancouver, British Columbia
   description:
-    - Implemented site-wide search using PHP and existing search code
-    - Updated several pages and elements on a WordPress site
-    - Fixed back-end and front-end bugs
-    - Provided technical support for customers on the site
-
-- organization: HebrewCrew
-  title: Assistant Hebrew Teacher
-  date: January 2019 - March 2020
-  location: Toronto, Ontario
-  description:
-    - Taught children to read & write in Hebrew
-    - Taught children the stories from the Torah
-    - Taught children the history of Jewish holidays
-
-- organization: Camp Timberlane
-  url: https://camptimberlane.ca/
-  title: Counsellor in Training (CIT)
-  date: July 2019 - August 2019
-  location: Haliburton, Ontario
-  description:
-    - Supervised and took care of children aged 9-14
-    - Helped plan and run various activities for the entire camp
-    - Helped facilitate fun activities such as sailing for campers
-    - Worked on the tech team for various productions, creating queues for screens and music on stage
-
-- organization: North Toronto Karate School
-  url: https://www.northtorontokarate.com/home.htm
-  title: Assistant Karate Teacher (Senpai)
-  date: October 2017 - June 2019
-  location: Toronto, Ontario
-  description:
-    - Taught karate classes to people aged 5-40+
-    - Helped facilitate school performances
-    - Helped run and organize tournaments
+    - Worked closely with 8+ therapists on the website providing technical support and updating their profiles
+    - Implemented site-wide search using PHP
+    - Updated over 16 pages the WordPress site which had over 5000+ monthly viewers

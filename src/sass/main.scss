@@ -96,7 +96,9 @@ button {
     font-size: 0.75em;
     position: absolute;
     top: -1em;
-    right: 2em;
+    left: 100%;
+    translate: -50% 0;
+    white-space: nowrap;
     rotate: 10deg;
   }
 }

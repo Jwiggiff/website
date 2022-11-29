@@ -1,23 +1,12 @@
 .skills {
-  .skills-list {
-    list-style: none;
-    display: flex;
-    flex-flow: wrap;
-    align-items: center;
-    width: 100%;
-    max-width: 14em;
-    font-size: 3em;
+  .container {
+    place-items: initial;
     transform-origin: 0 0;
     pointer-events: initial;
 
-    li {
-      letter-spacing: 0.1em;
-      line-height: 1;
-      font-weight: 600;
-
-      &:nth-child(odd) {
-        font-weight: 100;
-      }
+    &::after {
+      content: "Click Me!";
+      font-size: 2em;
     }
 
     &.broken {
@@ -73,9 +62,24 @@
         }
       }
     }
+  }
 
-    &::after {
-      content: "Click Me!";
+  .skills-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 14em;
+    font-size: clamp(1.25em, 3vw, 3em);
+
+    li {
+      letter-spacing: 0.1em;
+      line-height: 1;
+      font-weight: 600;
+
+      &:nth-child(odd) {
+        font-weight: 100;
+      }
     }
   }
 }
