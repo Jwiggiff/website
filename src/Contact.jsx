@@ -38,7 +38,7 @@ export default function Contact({ onScrollIn }) {
             <FontAwesomeIcon icon={faCodepen} />
           </a>
         </div>
-        <a id="resume-dl" ref={buttonRef} href="/assets/resume.pdf" target="_blank">
+        <a id="resume-dl" ref={buttonRef} href="/assets/JoshFriedman_resume.pdf" target="_blank">
           <FontAwesomeIcon icon={faCircleDown} />
           Resume
         </a>
