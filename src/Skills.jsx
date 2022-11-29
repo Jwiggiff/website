@@ -28,7 +28,7 @@ export default function Skills({ onScrollIn }) {
           <div className="row" key={index}>
             <ul className="skills-list">
               {skills[cat].map((skill, i) => (
-                <li key={i}>{skill.split(":")[0]}</li>
+                <li key={i}>{skill.split("(")[0]}</li>
               ))}
             </ul>
           </div>
