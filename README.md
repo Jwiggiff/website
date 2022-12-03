@@ -1,3 +1,11 @@
-# This is my personal website
+# Personal Website
+This is my person website!
 
-[Check it out](https://joshfriedman.dev)
+## Built with:
+- React
+- ViteJS
+- Sass
+- NodeJS
+
+---
+[Check it out here!](https://joshfriedman.dev)
