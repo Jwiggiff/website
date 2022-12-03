@@ -27,14 +27,14 @@
     - Worked with a Firebase database to search and filter users based on a user's saved preferences
     - Created an interactive front-end swiping page
 
-- organization: The Ivy Day Camp
-  url: https://theivy.ca/
-  title: Program Specialist
-  date: July 2021 - August 2021, July 2022 - August 2022
-  location: Toronto, Ontario
-  description:
-    - Created engaging sports programming for campers aged 4-14
-    - Organized and ran several spirit days and camp-wide competitions
+# - organization: The Ivy Day Camp
+#   url: https://theivy.ca/
+#   title: Program Specialist
+#   date: July 2021 - August 2021, July 2022 - August 2022
+#   location: Toronto, Ontario
+#   description:
+#     - Created engaging sports programming for campers aged 4-14
+#     - Organized and ran several spirit days and camp-wide competitions
 
 - organization: Incendium Academy
   url: https://incendiumacademy.org/
@@ -45,13 +45,13 @@
     - Designed and programmed a front-end website using vanilla HTML/CSS/JS while maintaining good SEO and mobile-friendly practices
     - Structured and programmed a back-end database to store user data and lesson content
 
-- organization: Socially-Distanced Backyard Karate Lessons
-  title: Sensei
-  date: June 2020 - October 2020
-  location: Toronto, Ontario
-  description:
-    - Self-run business, teaching several classes of students aged 4-12
-    - Engaged young kids in karate classes throughout the summer
+# - organization: Socially-Distanced Backyard Karate Lessons
+#   title: Sensei
+#   date: June 2020 - October 2020
+#   location: Toronto, Ontario
+#   description:
+#     - Self-run business, teaching several classes of students aged 4-12
+#     - Engaged young kids in karate classes throughout the summer
 
 - organization: One Stop Therapy
   url: https://www.onestoptherapy.ca/

@@ -63,9 +63,10 @@ span {
   gap: 0.5em;
 
   i {
-  width: 24px;
-  text-align: center;
-}}
+    width: 24px;
+    text-align: center;
+  }
+}
 
 .links {
   border-left: 1px solid black;
@@ -193,4 +194,24 @@ section {
 }
 .skill {
   margin-left: 1.5rem;
+}
+
+.projects {
+  list-style: none;
+
+  .project {
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+    padding: 8px;
+    padding-top: 0;
+    break-inside: avoid;
+
+    h4 {
+      display: inline-block;
+    }
+    a {
+      margin-inline-start: 0.5em;
+      border-bottom: 1px solid;
+    }
+  }
 }

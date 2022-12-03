@@ -2,6 +2,7 @@ import education from "./_data/education.yml";
 import experience from "./_data/experience.yml";
 import config from "./_data/resume.yml";
 import skills from "./_data/skills.yml";
+import projects from "./_data/projects.yml";
 
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -110,6 +111,22 @@ function Resume() {
             </ul>
           </div>
         ))}
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul className="projects">
+          {projects
+            .filter((p) => p.resume_description)
+            .map((project, index) => (
+              <li key={index} className="project">
+                <h4>{project.title}</h4>
+                <a target="_blank" href={project.url}>
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+                <p>{project.resume_description}</p>
+              </li>
+            ))}
+        </ul>
       </section>
     </>
   );

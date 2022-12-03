@@ -25,9 +25,11 @@ export default function Projects({ onScrollIn }) {
     <section className="projects" id="projects">
       <Heading>Projects</Heading>
       <ul className="projects-list" ref={projectsList}>
-        {projects.map((project, i) => (
-          <Card key={i} {...project} />
-        ))}
+        {projects
+          .filter((p) => !p.resume_only)
+          .map((project, i) => (
+            <Card key={i} {...project} />
+          ))}
       </ul>
     </section>
   );

@@ -1,12 +1,16 @@
 - title: Iris
   description: >
     A live transcription and translation tool for lecturers.
-  url: https://iris-translate-front.herokuapp.com
+  resume_description: >
+    A live transcription and translation tool for lecturers. Backend made using Python, WebSockets, Google Translate API and AssemblyAI's API. Frontend made with React and React Router. Made during the QHacks 2022 hackathon.
+  url: https://github.com/Jwiggiff/QHacks22
   image: "/assets/img/iris.png"
 - title: Jumper
   description: >
     A platform jumper game that has a new challenge each day.
-  url: https://jumperio.herokuapp.com
+  resume_description: >
+    A platform jumper game that has a new challenge each day. Daily global leaderboard shows usernames with the highest score. Built with Vanilla HTML/CSS, Babel, and using Google Datastore.
+  url: https://github.com/Jwiggiff/jumperio
   image: "/assets/img/jumper.png"
 - title: Volunteerism
   description: >
@@ -21,10 +25,15 @@
 - title: Flappy AI
   description: >
     A Neuro-Evolution model that learns to play Flappy Bird.
-  url: https://github.com/Jwiggiff/AI-Flappy-Bird\
+  url: https://github.com/Jwiggiff/AI-Flappy-Bird
   image: "/assets/img/flappy.png"
 - title: My Website
   description: >
     See how I made this website!
   url: https://github.com/Jwiggiff/website
   image: "/assets/img/website.png"
+- title: JARVIS Discord Bot
+  resume_only: true
+  resume_description: >
+    A multi-purpose discord bot made using Discord.js. Was used on 2500+ servers!
+  url: https://github.com/Jwiggiff/JARVIS
