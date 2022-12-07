@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+:root {
+  font-size: 12px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,16 +29,27 @@ a {
 
 header {
   width: 100%;
-  padding-bottom: 10px;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid black;
   font-size: 1.25vw;
 
   .name {
     float: left;
-    padding-right: 10px;
+    padding-right: 0.5rem;
 
     h1 {
       text-align: right;
+    }
+  }
+
+  span, a {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  
+    i {
+      width: 24px;
+      text-align: center;
     }
   }
 }
@@ -45,37 +60,25 @@ header {
 
 .left {
   float: left;
-  // width: 70%;
 }
 
 .right {
   float: right;
   text-align: right;
 
-  span {
+  span, a {
     justify-content: end;
-  }
-}
-
-span {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-
-  i {
-    width: 24px;
-    text-align: center;
   }
 }
 
 .links {
   border-left: 1px solid black;
-  padding-left: 10px;
+  padding-left: 0.5rem;
   float: left;
 }
 
 section {
-  margin-top: 15px;
+  margin-top: 1rem;
 
   h2 {
     font-size: 1.4em;
@@ -85,7 +88,7 @@ section {
       content: "";
       display: block;
       width: 40%;
-      padding-top: 5px;
+      padding-top: 0.25rem;
       border-bottom: 5px solid black;
     }
   }
@@ -96,22 +99,20 @@ section {
 }
 
 .experience {
-  margin-top: 10px;
+  margin-top: 0.5rem;
   border-bottom: 1px solid black;
-  padding: 0 8px;
+  padding: 0 0.25rem;
   break-inside: avoid;
 
   .firstRow {
-    height: 25px;
+    height: 1.5rem;
 
     .company {
       font-weight: bold;
       float: left;
-      line-height: 25px;
     }
     .date {
       float: right;
-      line-height: 25px;
     }
   }
 
@@ -128,27 +129,25 @@ section {
   }
 
   .description {
-    margin: 5px 0 10px 24px;
+    margin: 0.25rem 0 0.5rem 2rem;
 
     li {
-      margin-top: 5px;
+      margin-top: 0.25rem;
     }
   }
 }
 
 .education {
-  margin-top: 10px;
-  padding: 0 8px;
+  padding: 0 0.25rem;
   break-inside: avoid;
 
   .school {
+    margin-top: 0.25rem;
     font-weight: bold;
     float: left;
-    line-height: 25px;
   }
   .date {
     float: right;
-    line-height: 25px;
   }
   .location {
     font-size: 0.75em;
@@ -161,8 +160,8 @@ section {
     float: right;
   }
   .awards {
-    margin-block-start: 2px;
-    margin-inline-start: 24px;
+    margin-block-start: 0.25rem;
+    margin-inline-start: 1.5rem;
     font-size: 0.9em;
   }
 }
@@ -171,7 +170,8 @@ section {
   break-inside: avoid;
 }
 .skills-list {
-  margin-top: 10px;
+  margin-top: 0.5rem;
+  padding: 0 0.25rem;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   gap: 0.25rem;
@@ -200,9 +200,9 @@ section {
   list-style: none;
 
   .project {
-    margin-top: 10px;
+    margin-top: 0.5rem;
     border-bottom: 1px solid black;
-    padding: 8px;
+    padding: 0.25rem;
     padding-top: 0;
     break-inside: avoid;
 
