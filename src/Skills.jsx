@@ -1,29 +1,47 @@
-import { useEffect, useRef } from "react";
+import { useRef, useState } from "react";
 import Heading from "./_components/Heading";
 import skills from "./_data/skills.yml";
 
 export default function Skills({ onScrollIn }) {
-  const skillsList = useRef(null);
-  let tripleClick = 0;
+  const shouts = [
+    "Click Me!",
+    "Ouch!",
+    "Stop it!",
+    "That really hurt!",
+    "Okay it's not funny anymore",
+    "Seriously?",
+    "This ISN'T funny!",
+    "Ughhhhh",
+    "You've got to have something better to do",
+    "Really? Nothing?",
+    "Come on!?",
+    "Don't you have a life?",
+    "Go outside maybe",
+    "Get off your computer for a bit",
+    "This is getting ridiculous",
+    "I'm not even mad, I'm just disappointed",
+  ];
+  const [shoutI, setShoutI] = useState(0);
+  const containerRef = useRef(null);
 
-  useEffect(() => {
-    skillsList.current.onclick = (e) => {
-      tripleClick++;
-      let reset = setTimeout(() => (tripleClick = 0), 750);
-
-      if (tripleClick >= 3) {
-        tripleClick = 0;
-        clearTimeout(reset);
-        skillsList.current.classList.add("broken");
-        setTimeout(() => skillsList.current.classList.remove("broken"), 5000);
-      }
-    };
-  }, []);
+  const onClick = () => {
+    if (shoutI < shouts.length - 1) setShoutI(shoutI + 1);
+    containerRef.current.classList.add("active");
+    containerRef.current.addEventListener("animationend", () =>
+      containerRef.current.classList.remove("active")
+    );
+  };
 
   return (
     <section className="skills" id="skills">
       <Heading>Skills</Heading>
-      <div ref={skillsList} className="container float-text">
+      <div
+        onClick={onClick}
+        ref={containerRef}
+        className="container float-text"
+        shout={shouts[shoutI]}
+        style={{ "--deg": (shoutI / (shouts.length - 1)) * 360 + "deg" }}
+      >
         {Object.keys(skills).map((cat, index) => (
           <div className="row" key={index}>
             <ul className="skills-list">
@@ -33,18 +51,6 @@ export default function Skills({ onScrollIn }) {
             </ul>
           </div>
         ))}
-        {/* <div className="row">
-          Languages:
-          <ul></ul>
-        </div>
-        <div className="row">
-          Frameworks:
-          <ul></ul>
-        </div>
-        <div className="row">
-          Tools:
-          <ul></ul>
-        </div> */}
       </div>
     </section>
   );

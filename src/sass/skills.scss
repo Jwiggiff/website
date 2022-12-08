@@ -1,64 +1,26 @@
 .skills {
   .container {
     place-items: initial;
-    transform-origin: 0 0;
     pointer-events: initial;
 
     &::after {
-      content: "Click Me!";
+      content: attr(shout);
+      filter: hue-rotate(var(--deg));
       font-size: 2em;
     }
 
-    &.broken {
-      pointer-events: none;
-      animation: broken 5s ease-in-out;
+    &.active {
+      animation: punch 0.2s ease-out;
 
-      @keyframes broken {
+      @keyframes punch {
         0% {
-          rotate: 0deg;
-        }
-        10% {
-          rotate: 110deg;
-        }
-        30% {
-          rotate: 60deg;
-        }
-        50% {
-          rotate: 95deg;
-        }
-        70% {
-          rotate: 80deg;
-        }
-        90% {
-          rotate: 90deg;
-        }
-        100% {
-          rotate: 0deg;
-        }
-      }
-    }
-
-    &:active {
-      animation: shake 0.2s ease-in-out;
-
-      @keyframes shake {
-        0% {
-          translate: 0 0;
-        }
-        20% {
-          translate: 5px 0;
+          scale: 1;
         }
         40% {
-          translate: -5px 0;
-        }
-        60% {
-          translate: 5px 0;
-        }
-        80% {
-          translate: -5px 0;
+          scale: 0.9;
         }
         100% {
-          translate: 0 0;
+          scale: 1;
         }
       }
     }
