@@ -2,14 +2,14 @@
   description: >
     A live transcription and translation tool for lecturers.
   resume_description: >
-    A live transcription and translation tool for lecturers. Backend made using Python, WebSockets, Google Translate API and AssemblyAI's API. Frontend made with React and React Router. Made during the QHacks 2022 hackathon.
+    A live transcription and translation tool to help international students learn in their non-native language. Uses AssemblyAI's transcription API, Google Translate's API, and WebSockets for connecting users and sending data. Allows for multiple languages to be translated to in parallel. We won two awards at QHacks 2022.
   url: https://github.com/Jwiggiff/QHacks22
   image: "/assets/img/iris.png"
 - title: Jumper
   description: >
     A platform jumper game that has a new challenge each day.
   resume_description: >
-    A platform jumper game that has a new challenge each day. Daily global leaderboard shows usernames with the highest score. Built with Vanilla HTML/CSS, Babel, and using Google Datastore.
+    A platform jumper game that has a new challenge each day. Daily global leaderboard shows usernames with the highest score. Players can compete with each other live and watch each other's characters jump at the same time. Built with Vanilla HTML/CSS, Babel, and using Google Datastore.
   url: https://github.com/Jwiggiff/jumperio
   image: "/assets/img/jumper.png"
 - title: Volunteerism
@@ -35,5 +35,5 @@
 - title: JARVIS Discord Bot
   resume_only: true
   resume_description: >
-    A multi-purpose discord bot made using Discord.js. Was used on 5000+ servers!
+    A multi-purpose discord bot made using Discord.js. Features included playing music, search Google Images, Giphy and Urban Dictionary. Used CleverBot API to have human-like conversations with users using AI. Was used on 5000+ servers!
   url: https://github.com/Jwiggiff/JARVIS

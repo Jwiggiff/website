@@ -23,7 +23,6 @@ function Resume() {
         <div className="left">
           <div className="name">
             <h1>JOSH FRIEDMAN</h1>
-            <p>{config.tagline}</p>
           </div>
           <div className="links">
             <a target="_blank" href={"https://" + config.url}>
@@ -81,27 +80,27 @@ function Resume() {
       </section>
       <section id="skills">
         <h2>Technical Skills</h2>
-        <div className="skills-list">
-          {Object.keys(skills).map((skill, index) => (
-            <div key={index} className="skills__category">
-              <strong>{skill + ": "}</strong>
-              <p>{skills[skill].join(", ")}</p>
-            </div>
-          ))}
-        </div>
+        <p dangerouslySetInnerHTML={{ __html: config.skills }}></p>
       </section>
       <section id="experience">
         <h2>Experience</h2>
         {experience.map((job, index) => (
-          <div key={index} className="experience">
-            <div className="firstRow">
-              <span className="company">{job.organization}</span>
-              <span className="date">{job.date}</span>
-            </div>
-            <div className="clear"></div>
+          <div
+            key={index}
+            className={"experience" + (job.continued ? " continued" : "")}
+          >
+            {job.organization && (
+              <>
+                <div className="firstRow">
+                  <span className="company">{job.organization}</span>
+                  <span className="location">{job.location}</span>
+                </div>
+                <div className="clear"></div>
+              </>
+            )}
             <div className="secondRow">
               <span className="title">{job.title}</span>
-              <span className="location">{job.location}</span>
+              <span className="date">{job.date}</span>
             </div>
             <div className="clear"></div>
             <ul className="description">
@@ -114,6 +113,12 @@ function Resume() {
       </section>
       <section id="projects">
         <h2>Projects</h2>
+        <p>
+          Check out more projects at{" "}
+          <a href="https://joshfriedman.dev">joshfriedman.dev</a>. All source
+          code is available at{" "}
+          <a href="https://github.com/jwiggiff">github.com/jwiggiff</a>.
+        </p>
         <ul className="projects">
           {projects
             .filter((p) => p.resume_description)
@@ -127,6 +132,10 @@ function Resume() {
               </li>
             ))}
         </ul>
+      </section>
+      <section id="interest">
+        <h2>Other Interests</h2>
+        <p>{config.other_interests}</p>
       </section>
     </>
   );

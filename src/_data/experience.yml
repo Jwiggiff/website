@@ -1,64 +1,28 @@
-- organization: Faculty of Engineering and Applied Science
-  title: Web Migration Member
-  date: September 2022 - Present
-  location: Kingston, Ontario
-  description:
-    - Migrated over 30 pages of content into the new Faculty website using CascadeCMS
-    - Took design initiative on over 10 landing pages
-    - I was chosen as a team lead to mentor other team members and help with design decisions and technical difficulties
-
-- organization: Engineering Society Software Development Team
+- organization: Queen's Engineering Society Software Development Team
+  continued: true
   url: https://www.engsoc.queensu.ca/
   title: Team Manager
   date: September 2022 - Present
   location: Kingston, Ontario
   description:
-    - Led 3 separate project teams totalling 15 engineers
-    - Ensured clear project requirements were set
-    - Implemented a clear project management structure using Notion and Slack to ensure each team member contributed and their learning was supported by others
+    - Managed 3 project teams, working on a chrome extension for students, a video game that takes place in a university campus, and a computer vision weightlifting coach, totalling 15 engineers
+    - Led brainstorming sessions to define project expectations, goals, and desired final product
+    - Implemented a clear project management and tracking structure using Notion and Slack to ensure each team member contributed to the project and that their learning was supported by others
 
-- organization: Engineering Society Software Development Team
-  url: https://www.engsoc.queensu.ca/
-  title: Mobile Development Team Member
+- title: Homeslice Team Member
   date: September 2021 - April 2022
-  location: Kingston, Ontario
   description:
-    - Created a Tinder-style app to help students find housemates using Flutter
-    - Worked with a Firebase database to search and filter users based on a user's saved preferences
-    - Created an interactive front-end swiping page
-
-# - organization: The Ivy Day Camp
-#   url: https://theivy.ca/
-#   title: Program Specialist
-#   date: July 2021 - August 2021, July 2022 - August 2022
-#   location: Toronto, Ontario
-#   description:
-#     - Created engaging sports programming for campers aged 4-14
-#     - Organized and ran several spirit days and camp-wide competitions
+    - Created a Tinder-style app to help students find housemates with similar living styles and preferences
+    - Defined a Firebase database structure and used it to match users based on their saved preferences
+    - Created an interactive mobile application using Flutter which included the hallmark Tinder-style swiping, a messaging UI, and user authentication
 
 - organization: Incendium Academy
   url: https://incendiumacademy.org/
-  title: Web Developer
+  title: Software Developer
   date: October 2020 - September 2021
   location: Toronto, Ontario
   description:
-    - Designed and programmed a front-end website using vanilla HTML/CSS/JS while maintaining good SEO and mobile-friendly practices
-    - Structured and programmed a back-end database to store user data and lesson content
-
-# - organization: Socially-Distanced Backyard Karate Lessons
-#   title: Sensei
-#   date: June 2020 - October 2020
-#   location: Toronto, Ontario
-#   description:
-#     - Self-run business, teaching several classes of students aged 4-12
-#     - Engaged young kids in karate classes throughout the summer
-
-- organization: One Stop Therapy
-  url: https://www.onestoptherapy.ca/
-  title: Web Developer
-  date: June 2020 - August 2020
-  location: Vancouver, British Columbia
-  description:
-    - Worked closely with 8+ therapists on the website providing technical support and updating their profiles
-    - Implemented site-wide search using PHP
-    - Updated over 16 pages the WordPress site which had over 5000+ monthly viewers
+    - With friends from school, created a website where high school students could create accounts and have access to hundreds of free lessons to help prepare for university math and science competitions
+    - Received several government grants to fund the project
+    - Created the webapp from scratch using vanilla HTML/CSS/JS and implemented proper SEO and mobile-friendly practices
+    - Structured the backend using Firebase to store lesson content, user data and provide user authentication
