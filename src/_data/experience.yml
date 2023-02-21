@@ -1,3 +1,13 @@
+- organization: Nutripair
+  url: https://www.nutripair.co/
+  title: Software Engineering Intern (Frontend)
+  date: January 2023 - Present
+  location: Remote
+  description:
+    - Redesigned main pages including the login page and filter page using React Native
+    - Implemented a global style system to keep styles and fonts consistent throughout the app
+    - Ensured accessible styling with colours and fonts to allow vision-impaired users to have an equal experience with the application
+
 - organization: Queen's Engineering Society Software Development Team
   continued: true
   url: https://www.engsoc.queensu.ca/
@@ -15,14 +25,3 @@
     - Created a Tinder-style app to help students find housemates with similar living styles and preferences
     - Defined a Firebase database structure and used it to match users based on their saved preferences
     - Created an interactive mobile application using Flutter which included the hallmark Tinder-style swiping, a messaging UI, and user authentication
-
-- organization: Incendium Academy
-  url: https://incendiumacademy.org/
-  title: Software Developer
-  date: October 2020 - September 2021
-  location: Toronto, Ontario
-  description:
-    - With friends from school, created a website where high school students could create accounts and have access to hundreds of free lessons to help prepare for university math and science competitions
-    - Received several government grants to fund the project
-    - Created the webapp from scratch using vanilla HTML/CSS/JS and implemented proper SEO and mobile-friendly practices
-    - Structured the backend using Firebase to store lesson content, user data and provide user authentication

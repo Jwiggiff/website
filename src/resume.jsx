@@ -84,6 +84,13 @@ function Resume() {
       </section>
       <section id="experience">
         <h2>Experience</h2>
+        <p class="subtext">
+          My full work experience can be seen at{" "}
+          <a href="https://linkedin.com/in/joshwfriedman">
+            linkedin.com/in/joshwfriedman
+          </a>
+          .
+        </p>
         {experience.map((job, index) => (
           <div
             key={index}
@@ -113,7 +120,7 @@ function Resume() {
       </section>
       <section id="projects">
         <h2>Projects</h2>
-        <p>
+        <p class="subtext">
           Check out more projects at{" "}
           <a href="https://joshfriedman.dev">joshfriedman.dev</a>. All source
           code is available at{" "}
