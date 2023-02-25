@@ -2,11 +2,11 @@
   url: https://www.nutripair.co/
   title: Software Engineering Intern (Frontend)
   date: January 2023 - Present
-  location: Remote
+  location: California (Remote)
   description:
-    - Redesigned main pages including the login page and filter page using React Native
-    - Implemented a global style system to keep styles and fonts consistent throughout the app
-    - Ensured accessible styling with colours and fonts to allow vision-impaired users to have an equal experience with the application
+    - Worked with senior developers to create an app using TypeScript and React Native that helps users find foods that fit their dietary needs at restaurants around them
+    - Employed a SCRUM framework to complete tasks in time for deadlines such as investor demo days and beta releases to over 100 testers
+    - Completed several UI/UX fixes and complete redesigns of major screens in the app in time for the first beta release and continued to incorporate feedback from beta testers post-release
 
 - organization: Queen's Engineering Society Software Development Team
   continued: true
