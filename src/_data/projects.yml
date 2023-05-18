@@ -32,8 +32,3 @@
     See how I made this website!
   url: https://github.com/Jwiggiff/website
   image: "/assets/img/website.png"
-- title: JARVIS Discord Bot
-  resume_only: true
-  resume_description: >
-    A multi-purpose discord bot made using Discord.js. Features included playing music, search Google Images, Giphy and Urban Dictionary. Used CleverBot API to have human-like conversations with users using AI. Was used on 5000+ servers!
-  url: https://github.com/Jwiggiff/JARVIS

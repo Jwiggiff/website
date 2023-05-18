@@ -1,27 +1,39 @@
 - organization: Nutripair
+  continued: true
+  icon: /assets/img/nutripair.png
   url: https://www.nutripair.co/
-  title: Software Engineering Intern (Frontend)
-  date: January 2023 - Present
+  title: Software Engineering Intern (Full Stack)
+  date: April 2023 - Present
   location: California (Remote)
   description:
-    - Worked with senior developers to create an app using TypeScript and React Native that helps users find foods that fit their dietary needs at restaurants around them
-    - Employed a SCRUM framework to complete tasks in time for deadlines such as investor demo days and beta releases to over 100 testers
-    - Completed several UI/UX fixes and complete redesigns of major screens in the app in time for the first beta release and continued to incorporate feedback from beta testers post-release
+    - Implemented and tested user authentication using Amazing Cognito to authenticate with the rest of the AWS suite
+    - Improved security measures by implementing multi-factor authentication and federated sign-in with Google, Apple, and Facebook
+    - Worked with backend engineers to implement a caching layer to reduce loading times by 25%
 
-- organization: Queen's Engineering Society Software Development Team
+- title: Software Engineering Intern (Frontend)
+  date: January 2023 - April 2023
+  location: California (Remote)
+  description:
+    - Worked with senior developers to create an app using TypeScript + React Native to help users find food at nearby restaurants that match their dietary needs
+    - Using a SCRUM framework, we reduced the open ticket count by over 500 while implementing feedback from 100+ beta testers
+    - Designed several main pages including the welcome screen and user authentication flow which increased user retention by over 10%
+
+- organization: Engineering Society of Queen's University
+  icon: /assets/img/engsoc.png
   continued: true
   url: https://www.engsoc.queensu.ca/
-  title: Team Manager
-  date: September 2022 - Present
+  title: Director of Information Technology
+  date: May 2023 - Present
+  location: Kingston, Ontario
+  description:
+    - Reduced disk usage of our main servers by over 25%, avoiding a potential cost of over $1000 to upgrade the server
+    - Resolved over 50 security issues across over 20 websites
+    - Implemented 100+ recurring jobs to backup sites, check security vulnerabilities, and update outdated software
+
+- title: Software Development Team Manager
+  date: September 2022 - April 2023
   location: Kingston, Ontario
   description:
     - Managed 3 project teams, working on a chrome extension for students, a video game that takes place in a university campus, and a computer vision weightlifting coach, totalling 15 engineers
     - Led brainstorming sessions to define project expectations, goals, and desired final product
     - Implemented a clear project management and tracking structure using Notion and Slack to ensure each team member contributed to the project and that their learning was supported by others
-
-- title: Homeslice Team Member
-  date: September 2021 - April 2022
-  description:
-    - Created a Tinder-style app to help students find housemates with similar living styles and preferences
-    - Defined a Firebase database structure and used it to match users based on their saved preferences
-    - Created an interactive mobile application using Flutter which included the hallmark Tinder-style swiping, a messaging UI, and user authentication

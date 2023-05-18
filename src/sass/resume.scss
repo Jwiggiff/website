@@ -100,6 +100,8 @@ section {
 
 p.subtext {
   font-style: italic;
+  font-size: 0.9em;
+  line-height: 0.5;
 }
 
 #intro p {
@@ -116,15 +118,30 @@ p.subtext {
     border-bottom: initial;
   }
 
+  .heading {
+    display: grid;
+    grid-template-columns: 2.5rem 1fr;
+    align-items: center;
+
+    .icon img {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 0.5rem;
+    }
+
+    > div {
+      grid-column: 2;
+    }
+  }
+
   .firstRow {
     height: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
 
     .company {
       font-weight: bold;
-      float: left;
-    }
-    .location {
-      float: right;
+      text-decoration: none;
     }
   }
 
@@ -141,10 +158,10 @@ p.subtext {
   }
 
   .description {
-    margin: 0.25rem 0 0.5rem 2rem;
+    margin: 0.25rem 0 0.5rem 4rem;
 
     li {
-      margin-top: 0.25rem;
+      margin-top: 0.125rem;
     }
   }
 }

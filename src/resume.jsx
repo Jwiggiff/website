@@ -96,18 +96,28 @@ function Resume() {
             key={index}
             className={"experience" + (job.continued ? " continued" : "")}
           >
-            {job.organization && (
-              <>
-                <div className="firstRow">
-                  <span className="company">{job.organization}</span>
-                  <span className="location">{job.location}</span>
+            <div className="heading">
+              {job.icon && (
+                <a href={job.url} target="_blank" className="icon">
+                  <img className="icon" src={job.icon} alt={job.organization} />
+                </a>
+              )}
+              <div>
+                {job.organization && (
+                  <>
+                    <div className="firstRow">
+                      <a href={job.url} target="_blank" className="company">
+                        {job.organization}
+                      </a>
+                      <span className="location">{job.location}</span>
+                    </div>
+                  </>
+                )}
+                <div className="secondRow">
+                  <span className="title">{job.title}</span>
+                  <span className="date">{job.date}</span>
                 </div>
-                <div className="clear"></div>
-              </>
-            )}
-            <div className="secondRow">
-              <span className="title">{job.title}</span>
-              <span className="date">{job.date}</span>
+              </div>
             </div>
             <div className="clear"></div>
             <ul className="description">
