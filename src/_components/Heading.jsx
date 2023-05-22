@@ -42,6 +42,11 @@ export default function Heading({ children }) {
           p.draw();
         }
       };
+
+      p.touchEnded = () => {
+        p.mouseX = 0;
+        p.mouseY = 0;
+      };
     });
 
     return () => sketch.remove();
