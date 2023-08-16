@@ -11,5 +11,6 @@ frameworks:
 
 technologies:
   - Git
+  - AWS
   - Firebase
   - Linux
