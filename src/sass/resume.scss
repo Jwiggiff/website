@@ -140,6 +140,7 @@ p.subtext {
     grid-template-columns: 1fr auto;
 
     .company {
+      width: max-content;
       font-weight: bold;
       text-decoration: none;
     }
