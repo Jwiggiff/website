@@ -1,9 +1,29 @@
+- organization: Ollon
+  icon: /assets/img/ollon.png
+  url: https://www.ollon.ca/
+  title: Software Engineer Intern
+  date: June 2023 - August 2023
+  location: Toronto, Ontario (Remote)
+  description:
+    - Redeveloped a machine learning model in Python for faster and better performance, increasing the accuracy of the results by over 20% and decreasing the time elapsed by over 50%
+    - Resolved over 100 bugs and implemented over 6 new features across 7 different clients, completing the first version of a mobile app, and resolving all logged errors in another web project
+    - Consulted directly with clients to understand functional requirements and implement satisfactory solutions
+
 - organization: Nutripair
   continued: true
   icon: /assets/img/nutripair.png
   url: https://www.nutripair.co/
-  title: Software Engineering Intern (Full Stack)
-  date: April 2023 - Present
+  title: Full Stack Tech Lead
+  date: August 2023 - Present
+  location: California (Remote)
+  description:
+    - Implemented a CI/CD pipeline using GitHub Actions to fully automate the testing and building process of the app, decreasing build times from a day to under a minute
+    - Led my own team of interns focused on implementing automated tests for frontend and backend using Jest
+    - Documented the various processes and systems in place throughout our tech stack, from development guidelines to testing and deployment
+
+- title: Software Engineering Intern (Full Stack)
+  continued: true
+  date: April 2023 - August 2023
   location: California (Remote)
   description:
     - Implemented and tested user authentication using Amazing Cognito to authenticate with the rest of the AWS suite
