@@ -10,11 +10,14 @@ import {
   faGlobe,
   faLocationDot,
   faPhone,
+  faQuoteLeft,
+  faQuoteRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./sass/resume.scss";
+import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 function Resume() {
   return (
@@ -80,11 +83,12 @@ function Resume() {
       </section>
       <section id="skills">
         <h2>Technical Skills</h2>
-        <p dangerouslySetInnerHTML={{ __html: config.skills }}></p>
+        <ReactMarkdown>{config.skills}</ReactMarkdown>
       </section>
       <section id="experience">
         <h2>Experience</h2>
         <p class="subtext">
+          {config.experience_tagline}
           My full work experience can be seen at{" "}
           <a href="https://linkedin.com/in/joshwfriedman">
             linkedin.com/in/joshwfriedman
@@ -120,9 +124,12 @@ function Resume() {
               </div>
             </div>
             <div className="clear"></div>
+            <p className="context">{job.context}</p>
             <ul className="description">
               {job.description.map((point, index) => (
-                <li key={index}>{point}</li>
+                <li key={index}>
+                  <ReactMarkdown>{point}</ReactMarkdown>
+                </li>
               ))}
             </ul>
           </div>
@@ -153,6 +160,20 @@ function Resume() {
       <section id="interest">
         <h2>Other Interests</h2>
         <p>{config.other_interests}</p>
+      </section>
+      <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div className="testimonials">
+          {config.testimonials.map((testimonial, index) => (
+            <div key={index} className="testimonial">
+              <p className="quote">
+                <FontAwesomeIcon icon={faQuoteLeft} />
+                {testimonial.quote}
+              </p>
+              <p className="author">- {testimonial.author}</p>
+            </div>
+          ))}
+        </div>
       </section>
     </>
   );

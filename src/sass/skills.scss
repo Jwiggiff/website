@@ -9,6 +9,8 @@
     list-style: none;
     display: flex;
     flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 0.5rem;
     max-width: calc(100% - 20rem);
     // font-size: clamp(1.25em, 3vw, 3em);

@@ -1,42 +1,50 @@
-- organization: Ollon
-  icon: /assets/img/ollon.png
-  url: https://www.ollon.ca/
-  title: Software Engineer Intern
-  date: June 2023 - August 2023
-  location: Toronto, Ontario (Remote)
-  description:
-    - Redeveloped a machine learning model in Python for faster and better performance, increasing the accuracy of the results by over 20% and decreasing the time elapsed by over 50%
-    - Resolved over 100 bugs and implemented over 6 new features across 7 different clients, completing the first version of a mobile app, and resolving all logged errors in another web project
-    - Consulted directly with clients to understand functional requirements and implement satisfactory solutions
-
 - organization: Nutripair
   continued: true
   icon: /assets/img/nutripair.png
   url: https://www.nutripair.co/
-  title: Full Stack Tech Lead
+  title: Founding Full Stack Tech Lead
   date: August 2023 - Present
   location: California (Remote)
+  context: Nutripair is a ~10 person startup that helps people find the best foods for their dietary preferences at restaurants near them, while also helping local restaurants increase revenue and attract more diverse customers. I joined as an intern and have grown to become the Full Stack Tech Lead of the company, while continuing my full-time studies at Queen's University.
   description:
-    - Implemented a CI/CD pipeline using GitHub Actions to fully automate the testing and building process of the app, decreasing build times from a day to under a minute
-    - Led my own team of interns focused on implementing automated tests for frontend and backend using Jest
-    - Documented the various processes and systems in place throughout our tech stack, from development guidelines to testing and deployment
+    - "**Worked with the CEO** and other upper management to discuss the company's needs concerning DevOps, including automation, documentation, and CI/CD and created a DevOps plan that I executed with my team of interns"
+    - "**Created a product roadmap** with the other tech leads and CEO to keep the team on track for launch, as well as long-term goals post-launch"
+    - Implemented a CI/CD pipeline using GitHub Actions to fully automate the testing and building process of the app, **decreasing build times from a day to under a minute**, allowing the team to focus their time more on development and pushing the company forward
+    - "**Guided my team of interns** focused on implementing automated tests for frontend and backend using Jest, ensuring reliability within the app"
+    - "**Documented the various processes and systems** in place throughout our tech stack, from development guidelines to testing and deployment, easing the onboarding process of new interns to ensure the company can withstand turnover"
 
 - title: Software Engineering Intern (Full Stack)
   continued: true
   date: April 2023 - August 2023
   location: California (Remote)
   description:
-    - Implemented and tested user authentication using Amazing Cognito to authenticate with the rest of the AWS suite
-    - Improved security measures by implementing multi-factor authentication and federated sign-in with Google, Apple, and Facebook
-    - Worked with backend engineers to implement a caching layer to reduce loading times by 25%
+    - Implemented and tested user authentication using Amazing Cognito to authenticate with the rest of the AWS suite, **increasing security within the app**, which allowed the company to apply for several partnerships that needed specific security standards
+    - Improved security measures by **implementing multi-factor authentication and federated sign-in** with Google, Apple, and Facebook, increasing the credibility and ease-of-access of the application for end users
+    - Worked with backend engineers to implement a caching layer to **reduce loading times by 25%**, increasing customer satisfaction by over 65%
 
 - title: Software Engineering Intern (Frontend)
   date: January 2023 - April 2023
   location: California (Remote)
   description:
-    - Worked with senior developers to create an app using TypeScript + React Native to help users find food at nearby restaurants that match their dietary needs
-    - Using a SCRUM framework, we reduced the open ticket count by over 500 while implementing feedback from 100+ beta testers
-    - Designed several main pages including the welcome screen and user authentication flow which increased user retention by over 10%
+    - "**Worked with tech leads** to create an app using **TypeScript + React Native** to help users find food at nearby restaurants that match their dietary needs"
+    - Followed an agile framework to keep the team on track
+    - Created initial designs and functionality for the main pages of the app including the restaurant homepage, menu item page, and filters
+    - "**Worked directly with tester feedback** to iterate and improve the functionality and look of the application"
+    - Designed several main pages including the welcome screen and user authentication flow which **increased user retention by over 10%**
+
+- organization: Ollon
+  icon: /assets/img/ollon.png
+  url: https://www.ollon.ca/
+  title: Software Engineer Intern
+  date: June 2023 - August 2023
+  location: Toronto, Ontario (Remote)
+  context: Ollon is a software consulting company that creates unique and highly custom solutions for companies from e-commerce, mobile and web apps, to the Internet of Things and AI.
+  description:
+    - "**Worked with the CEO to develop a plan** to redevelop a machine learning model in Python into more reusable code"
+    - Independently implemented the plan which resulted in **increasing the accuracy of the results by over 20% and decreasing the time elapsed by over 50%**
+    - Implemented an email status feature to increase transparency from the end user who is triggering the email to the backend system which sends the email, **decreasing the volume of error reporting and relieving unnecessary communications with the client**
+    - "**Conducted code analysis and cleanup** while also fixing bugs and implementing new features in a computer vision mobile app which made up for months of missed work, catching the project up to the projected timeline and making it ready for launch"
+    - "**Worked directly with clients** to understand the product and suggest viable solutions to their issues and implemented these solutions for feedback rounds with the client"
 
 - organization: Engineering Society of Queen's University
   icon: /assets/img/engsoc.png
@@ -45,15 +53,16 @@
   title: Director of Information Technology
   date: May 2023 - Present
   location: Kingston, Ontario
+  context: The Engineering Society employs over 150 students and over 300 volunteers. It operates several businesses on campus as well as a wealth of clubs, conferences, design teams and events.
   description:
-    - Reduced disk usage of our main servers by over 25%, avoiding a potential cost of over $1000 to upgrade the server
-    - Resolved over 50 security issues across over 20 websites
-    - Implemented 100+ recurring jobs to backup sites, check security vulnerabilities, and update outdated software
+    - Reduced disk usage of our main servers by over 25%, **avoiding a potential cost of over $1000** to upgrade the server
+    - Resolved over 50 security issues across over 20 websites, **increasing the security and credibility of the organization** as a whole
+    - Implemented 100+ recurring cron jobs to backup sites, check security vulnerabilities, and update outdated software to help **maintain server upkeep and security automatically**
 
 - title: Software Development Team Manager
   date: September 2022 - April 2023
   location: Kingston, Ontario
   description:
-    - Managed 3 project teams, working on a chrome extension for students, a video game that takes place in a university campus, and a computer vision weightlifting coach, totalling 15 engineers
-    - Led brainstorming sessions to define project expectations, goals, and desired final product
-    - Implemented a clear project management and tracking structure using Notion and Slack to ensure each team member contributed to the project and that their learning was supported by others
+    - "**Managed 3 project teams**, working on a Chrome extension for students, a video game that takes place on a university campus, and a computer vision weightlifting coach, **totalling 15 engineers**"
+    - Led brainstorming sessions to **define project expectations, goals, and desired final product**
+    - Implemented a clear **project management and tracking structure using Notion and Slack** to ensure each team member contributed to the project and that their learning was supported by others
