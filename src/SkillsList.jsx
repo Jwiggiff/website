@@ -1,53 +1,69 @@
 import { useRef, useState } from "react";
 import skills from "./_data/skills.yml";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faAws,
+  faCss3Alt,
+  faGitAlt,
+  faHtml5,
+  faJava,
+  faJsSquare,
+  faLinux,
+  faNode,
+  faReact,
+  faSass,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faDatabase,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  CIcon,
+  FirebaseIcon,
+  FlutterIcon,
+  TypeScriptIcon,
+  VSCodeIcon,
+} from "./_components/CustomIcons";
+
+const skillIcons = {
+  JavaScript: faJsSquare,
+  TypeScript: TypeScriptIcon,
+  HTML: faHtml5,
+  CSS: faCss3Alt,
+  SCSS: faSass,
+  SQL: faDatabase,
+  C: CIcon,
+  Java: faJava,
+  // Assembly: ,
+  NodeJS: faNode,
+  React: faReact,
+  "React Native": faReact,
+  Flutter: FlutterIcon,
+  Git: faGitAlt,
+  AWS: faAws,
+  Firebase: FirebaseIcon,
+  Linux: faLinux,
+  VSCode: VSCodeIcon,
+};
 
 export default function SkillsList() {
-  const shouts = [
-    "Click Me!",
-    "Ouch!",
-    "Stop it!",
-    "That really hurt!",
-    "Okay it's not funny anymore",
-    "Seriously?",
-    "This ISN'T funny!",
-    "Ughhhhh",
-    "You've got to have something better to do",
-    "Really? Nothing?",
-    "Come on!?",
-    "Don't you have a life?",
-    "Go outside maybe",
-    "Get off your computer for a bit",
-    "This is getting ridiculous",
-    "I'm not even mad, I'm just disappointed",
-  ];
-  const [shoutI, setShoutI] = useState(0);
-  const containerRef = useRef(null);
-
-  const onClick = () => {
-    if (shoutI < shouts.length - 1) setShoutI(shoutI + 1);
-    containerRef.current.classList.add("active");
-    containerRef.current.addEventListener("animationend", () =>
-      containerRef.current.classList.remove("active")
-    );
+  const onMouseMove = ({ target, clientX, clientY }) => {
+    let rect = target.getBoundingClientRect();
+    const x = clientX - rect.x;
+    const y = clientY - rect.y;
+    target.style.setProperty("--x", `${x}px`);
+    target.style.setProperty("--y", `${y}px`);
   };
 
   return (
-    <div
-      onClick={onClick}
-      ref={containerRef}
-      className="container float-text"
-      shout={shouts[shoutI]}
-      style={{ "--deg": (shoutI / (shouts.length - 1)) * 360 + "deg" }}
-    >
-      {Object.keys(skills).map((cat, index) => (
-        <div className="row" key={index}>
-          <ul className="skills-list">
-            {skills[cat].map((skill, i) => (
-              <li key={i}>{skill.split("(")[0]}</li>
-            ))}
-          </ul>
-        </div>
-      ))}
+    <div className="container">
+      <ul className="skills-list">
+        {skills.map((skill, i) => (
+          <li key={i} onMouseMove={onMouseMove}>
+            {<FontAwesomeIcon icon={skillIcons[skill]} />}
+            {skill}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

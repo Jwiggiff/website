@@ -1,20 +1,14 @@
-// import Sketch from "react-p5";
 import { Point } from "../extra/Point";
 import p5 from "p5";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Heading({ children }) {
   const canvasParentRef = useRef(null);
-  let sketch;
 
   useEffect(() => {
-    sketch = new p5((p) => {
+    const sketch = new p5((p) => {
       let font;
       let points;
-      let fontSize = parseInt(
-        getComputedStyle(canvasParentRef.current).fontSize.split("px")[0]
-      );
-      let paddingLeft = Math.min(10 * 16, window.innerWidth * 0.08);
 
       p.preload = () => {
         font = p.loadFont(
@@ -23,6 +17,10 @@ export default function Heading({ children }) {
       };
 
       p.setup = () => {
+        let fontSize = parseInt(
+          getComputedStyle(canvasParentRef.current).fontSize.split("px")[0]
+        );
+        let paddingLeft = Math.min(10 * 16, window.innerWidth * 0.08);
         p.createCanvas(1000, 250).parent(canvasParentRef.current);
 
         points = font.textToPoints(
@@ -49,14 +47,15 @@ export default function Heading({ children }) {
       };
     });
 
-    return () => sketch.remove();
+    const listener = window.addEventListener("resize", () => {
+      sketch.setup();
+    });
+
+    return () => {
+      window.removeEventListener("resize", listener);
+      sketch.remove();
+    };
   });
 
-  return (
-    <div
-      // style={{ marginLeft: "clamp(-2rem, -10vw, -10rem)", marginTop: "clamp(-1rem, -5vw, -5rem)" }}
-      className="p5-sketch"
-      ref={canvasParentRef}
-    ></div>
-  );
+  return <div className="p5-sketch" ref={canvasParentRef}></div>;
 }

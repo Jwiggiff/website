@@ -1,15 +1,18 @@
-languages:
-  - HTML
-  - CSS
-  - JavaScript
-  - Java
-
-frameworks:
-  - React
-  - NodeJS
-  - Flutter
-
-technologies:
-  - Git
-  - Firebase
-  - Linux
+- JavaScript
+- TypeScript
+- HTML
+- CSS
+- SCSS
+- SQL
+- C
+- Java
+- Assembly
+- NodeJS
+- React
+- React Native
+- Flutter
+- Git
+- AWS
+- Firebase
+- Linux
+- VSCode

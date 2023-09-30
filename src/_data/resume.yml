@@ -5,8 +5,23 @@ location: Toronto, Ontario
 github: github.com/jwiggiff
 linkedin: linkedin.com/in/joshwfriedman
 
+intro: I am currently looking for a 12-month full-time internship position starting in September 2024 as part of my school's internship program, after which I will return to school for my last year of studies. I am someone who loves to learn, and I am looking for a position that supports that goal, but where I can also contribute my existing experiences and knowledge to the team. I am always looking to stay at the forefront of new technologies, adapting my process to be more efficient by using tools such as GitHub Copilot and ChatGPT for debugging. I am particularly passionate about projects that bridge the gap between hardware and software, such as robotics or programming physical systems!
+
+experience_tagline: >
+  I am currently pursuing my degree at Queen's University full-time while simultaneously working part-time as a Tech Lead at Nutripair and as Director of IT for the Engineering Society.
+
 skills: >
-  I have over <b>7 years</b> of <b>JavaScript</b> experience, originally self-taught, using <b>NodeJS</b> for backends and <b>ReactJS + TypeScript</b> for frontends. I have over <b>5 years</b> of <b>HTML/CSS</b> experience, also self-taught. In fact, I'm so comfortable with it I generate my resume using HTML and CSS! I have about <b>3 years</b> of mobile development experience using technologies like <b>Flutter and React Native</b>. I have used <b>Java and C</b> over the past <b>3 years</b> in coursework. I have <b>3 years</b> of experience working with several backend technologies including <b>Firebase, MongoDB, and AWS</b>. I know these skills are just the beginning, and I am always looking to learn more!
+  I have over **7 years** of **JavaScript** experience, originally self-taught, using **NodeJS** for backends and **ReactJS + TypeScript** for frontends. I have over **5 years** of **HTML/CSS** experience, also self-taught. I have about **3 years** of mobile development experience using technologies like **Flutter and React Native**. I have used **Java and C** over the past **3 years** in coursework. I have **3 years** of experience working with several backend technologies including **Firebase, MongoDB, PostgreSQL and AWS**. I am currently learning **Python and MatLab.** Despite my range of skills, I know these are just the beginning, and I am always looking to learn more!
 
 other_interests: >
-  There's more to me besides engineering! I have a passion for music, both listening and performing. I am currently part of a pit band for a musical and I ran a charity concert called Covid Creations that raised over $14,000 for Sunnybrook Hospital's Covid Research Fund! I also enjoy martial arts and currently hold my 3rd degree black belt in Karate.
+  There's more to me besides engineering! I have a passion for music, playing guitar and saxophone, as well as listening to R&B, Rock and Roll, Jazz and Pop music. I also ran a charity concert called Covid Creations that raised over $14,000 for Sunnybrook Hospital's Covid Research Fund! Besides music, I enjoy playing hockey and have earned my 3rd degree black belt in Karate.
+
+testimonials:
+  - author: Catlin Tran, Founder & CEO at Nutripair
+    quote: Josh is an integral part of Nutripair's team and consistently delivers exceptional contributions while always being someone you can count on to get the job done.
+  # - author: Shohei Yamashita, Front End Lead at Nutripair
+  #   quote: I worked closely with Josh and can confidently vouch for his outstanding qualities. While at Nutripair, he grew from being just a front-end developer into a full-stack lead. Josh has a knack for quickly picking up new technologies, paying attention to detail while maintaining a high-level perspective. He is an excellent teacher and always ready to assist others. Most importantly, Josh is a reliable achiever, consistently delivering results and making them an essential part of any team or project.
+  - author: Shohei Yamashita, Front End Lead at Nutripair
+    quote: I worked closely with Josh and can confidently vouch for his exceptional qualities. He seamlessly evolved from a front-end developer to a full-stack lead, excelling in learning new technologies, attention to detail, and consistent, reliable results—a valuable asset to any team or project.
+  - author: Chris Elcombe, Senior Developer at Ollon
+    quote: Josh was able to quickly ramp up and start working on different projects in different languages. He worked well in a team, promptly bringing up blockers and issues he encountered making turnaround time on tasks short and productive.

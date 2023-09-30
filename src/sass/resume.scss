@@ -18,7 +18,10 @@ body {
 
 body {
   font-family: "Montserrat", sans-serif;
-  margin: 1cm;
+}
+@page {
+  size: A4;
+  margin: 0.75cm;
 }
 svg {
   width: 1em;
@@ -101,11 +104,19 @@ section {
 p.subtext {
   font-style: italic;
   font-size: 0.9em;
-  line-height: 0.5;
+  margin: 0;
 }
 
 #intro p {
   text-align: center;
+  font-style: italic;
+
+  &::before {
+    content: "“";
+  }
+  &::after {
+    content: "”";
+  }
 }
 
 .experience {
@@ -140,6 +151,7 @@ p.subtext {
     grid-template-columns: 1fr auto;
 
     .company {
+      width: max-content;
       font-weight: bold;
       text-decoration: none;
     }
@@ -155,6 +167,14 @@ p.subtext {
     .date {
       float: right;
     }
+  }
+
+  .context {
+    padding: 0 0.25rem;
+    border-left: 2px solid var(--blue);
+    font-size: 0.9em;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
   }
 
   .description {
@@ -215,6 +235,38 @@ p.subtext {
     a {
       margin-inline-start: 0.5em;
       border-bottom: 1px solid;
+    }
+  }
+}
+
+#testimonials {
+  break-inside: avoid;
+
+  .testimonials {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    .quote {
+      font-size: 1.1em;
+      font-style: italic;
+      margin-bottom: 1em;
+      position: relative;
+
+      svg {
+        position: absolute;
+        top: -1em;
+        left: -1em;
+        width: 3em;
+        height: 3em;
+        opacity: 0.1;
+      }
+    }
+
+    .author {
+      font-size: 0.9em;
+      text-align: right;
     }
   }
 }
