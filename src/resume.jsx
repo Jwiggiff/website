@@ -56,9 +56,6 @@ function Resume() {
         </div>
         <div className="clear"></div>
       </header>
-      <section id="intro">
-        <p>{config.intro}</p>
-      </section>
       <section id="education">
         <h2>Education</h2>
         {education.map((school, index) => (
@@ -83,11 +80,21 @@ function Resume() {
       </section>
       <section id="skills">
         <h2>Technical Skills</h2>
-        <ReactMarkdown>{config.skills}</ReactMarkdown>
+        <div className="skills">
+          {Object.entries(skills).map(([cat, list]) => (
+            <p>
+              <b>{cat}: </b>
+              <span>| </span>
+              {list.map((skill) => (
+                <span>{skill} | </span>
+              ))}
+            </p>
+          ))}
+        </div>
       </section>
       <section id="experience">
         <h2>Experience</h2>
-        <p class="subtext">
+        <p className="subtext">
           {config.experience_tagline}
           My full work experience can be seen at{" "}
           <a href="https://linkedin.com/in/joshwfriedman">
@@ -137,7 +144,7 @@ function Resume() {
       </section>
       <section id="projects">
         <h2>Projects</h2>
-        <p class="subtext">
+        <p className="subtext">
           Check out more projects at{" "}
           <a href="https://joshfriedman.dev">joshfriedman.dev</a>. All source
           code is available at{" "}
@@ -152,28 +159,10 @@ function Resume() {
                 <a target="_blank" href={project.url}>
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
-                <p>{project.resume_description}</p>
+                <ReactMarkdown>{project.resume_description}</ReactMarkdown>
               </li>
             ))}
         </ul>
-      </section>
-      <section id="interest">
-        <h2>Other Interests</h2>
-        <p>{config.other_interests}</p>
-      </section>
-      <section id="testimonials">
-        <h2>Testimonials</h2>
-        <div className="testimonials">
-          {config.testimonials.map((testimonial, index) => (
-            <div key={index} className="testimonial">
-              <p className="quote">
-                <FontAwesomeIcon icon={faQuoteLeft} />
-                {testimonial.quote}
-              </p>
-              <p className="author">- {testimonial.author}</p>
-            </div>
-          ))}
-        </div>
       </section>
     </>
   );

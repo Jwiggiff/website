@@ -12,10 +12,9 @@ import {
   faNode,
   faReact,
   faSass,
+  faPython,
 } from "@fortawesome/free-brands-svg-icons";
-import {
-  faDatabase,
-} from "@fortawesome/free-solid-svg-icons";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import {
   CIcon,
   FirebaseIcon,
@@ -43,6 +42,7 @@ const skillIcons = {
   Firebase: FirebaseIcon,
   Linux: faLinux,
   VSCode: VSCodeIcon,
+  Python: faPython,
 };
 
 export default function SkillsList() {
@@ -57,12 +57,14 @@ export default function SkillsList() {
   return (
     <div className="container">
       <ul className="skills-list">
-        {skills.map((skill, i) => (
-          <li key={i} onMouseMove={onMouseMove}>
-            {<FontAwesomeIcon icon={skillIcons[skill]} />}
-            {skill}
-          </li>
-        ))}
+        {Object.values(skills)
+          .flat()
+          .map((skill, i) => (
+            <li key={i} onMouseMove={onMouseMove}>
+              {<FontAwesomeIcon icon={skillIcons[skill]} />}
+              {skill}
+            </li>
+          ))}
       </ul>
     </div>
   );

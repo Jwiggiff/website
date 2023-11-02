@@ -107,18 +107,6 @@ p.subtext {
   margin: 0;
 }
 
-#intro p {
-  text-align: center;
-  font-style: italic;
-
-  &::before {
-    content: "“";
-  }
-  &::after {
-    content: "”";
-  }
-}
-
 .experience {
   margin-top: 0.5rem;
   border-bottom: 1px solid black;
@@ -158,7 +146,7 @@ p.subtext {
   }
 
   .secondRow {
-    font-size: 0.75em;
+    font-size: 0.9em;
     font-style: italic;
 
     .title {
@@ -217,6 +205,10 @@ p.subtext {
 
 #skills {
   break-inside: avoid;
+
+  .skills {
+    margin: 0.25rem 0.5rem;
+  }
 }
 
 .projects {
@@ -235,38 +227,6 @@ p.subtext {
     a {
       margin-inline-start: 0.5em;
       border-bottom: 1px solid;
-    }
-  }
-}
-
-#testimonials {
-  break-inside: avoid;
-
-  .testimonials {
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-
-    .quote {
-      font-size: 1.1em;
-      font-style: italic;
-      margin-bottom: 1em;
-      position: relative;
-
-      svg {
-        position: absolute;
-        top: -1em;
-        left: -1em;
-        width: 3em;
-        height: 3em;
-        opacity: 0.1;
-      }
-    }
-
-    .author {
-      font-size: 0.9em;
-      text-align: right;
     }
   }
 }
