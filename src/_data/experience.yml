@@ -6,9 +6,9 @@
   location: California (Remote)
   description:
     - As a member of the upper management team, I work with the CEO and other tech leads to create a product that helps users find food to match their dietary needs while also helping restaurants increase their customer base
-    - Implemented a CI/CD pipeline using **GitHub Actions** to fully automate the testing and building process of the app, decreasing build times from a day to under a minute
-    - Guided a team of interns focused on writing tests across the stack using **Jest**
-    - Documented the various processes and systems in place throughout our tech stack using **Notion**, increasing the onboarding speed of new engineers by over 50%
+    - Implemented a CI/CD pipeline using **GitHub Actions** to fully automate the testing and building process of the app, decreasing build times by 50% and increasing developer productivity by 25%
+    - Guided a team of interns focused on writing tests across the stack using **Jest**, increasing code coverage by 20%
+    - Documented the various processes and systems in place throughout the tech stack using **Notion**, increasing the onboarding speed of new engineers by over 50%
 
 - organization: Nutripair
   icon: /assets/img/nutripair.png
@@ -17,10 +17,9 @@
   date: January 2023 - August 2023
   location: California (Remote)
   description:
-    - Implemented user authentication using **Amazon Cognito** to authenticate with the rest of the **AWS** suite, increasing security within the app
-    - Worked with backend engineers to implement a **CloudFront** caching layer to reduce loading times by 25%, increasing customer satisfaction by over 65%
-    - Worked with tech leads in an agile team to develop an app using **TypeScript + React Native** to help users find food at nearby restaurants that match their dietary needs
-    - Worked closely with beta testers to iterate and implement feedback, increasing user retention by 10%
+    - Decreased security vulnerabilities by 50% by implementing an authentication system using **AWS Cognito** across the stack
+    - Collaborated with backend engineers to implement a **CloudFront** caching layer to reduce loading times by 25%, increasing customer satisfaction by over 65%
+    - Worked directly with beta tester feedback to iterate a **React + TypeScript** frontend increasing user-reported satisfaction by over 60%
 
 - organization: Ollon
   icon: /assets/img/ollon.png
@@ -30,9 +29,9 @@
   location: Toronto, Ontario (Remote)
   description:
     - Multi-tasked between several software projects to deliver high quality products to clients in a timely manner
-    - Worked with the CEO to develop a plan to redevelop a machine learning model in **Python** into more reusable code, and followed through, increasing accuracy by over 20% and decreasing runtime by over 50%
+    - Created and implemented a plan to redevelop a machine learning model in **Python** into more reusable code, increasing accuracy by over 20% and decreasing runtime by over 50%
     - Implemented an email status feature to connect the **React** frontend to the **Node.JS** backend, decreasing the volume of error reporting by over 75%
-    - Worked directly with clients to understand the product and suggest viable solutions to their issues and implemented these solutions for feedback rounds with the client
+    - Met with clients to discuss product requirements, increasing satisfaction on the first revision by 25%
 
 - organization: Engineering Society of Queen's University
   icon: /assets/img/engsoc.png
@@ -42,6 +41,5 @@
   location: Kingston, Ontario
   description:
     - Managed IT resources for 7 businesses and 40+ teams overseen by the student society
-    - Reduced disk usage of our **Linux** main servers by over 25%, avoiding a potential cost of over $1000
-    - Helped resolve key security vulnerabilities across our society websites, increasing security and preventing potential data breaches
-    - Implemented 100+ recurring cron jobs to backup sites, check security vulnerabilities, and update outdated software to help maintain server upkeep and security automatically
+    - Reduced disk usage of the **Linux** main server by over 25%, avoiding a potential cost of over $1000
+    - Decreased security vulnerabilities by 85% by implementing recurring security audits and automatic updates
