@@ -95,8 +95,7 @@ function Resume() {
       <section id="experience">
         <h2>Experience</h2>
         <p className="subtext">
-          {config.experience_tagline}
-          My full work experience can be seen at{" "}
+          Full work experience can be seen at{" "}
           <a href="https://linkedin.com/in/joshwfriedman">
             linkedin.com/in/joshwfriedman
           </a>
@@ -145,9 +144,9 @@ function Resume() {
       <section id="projects">
         <h2>Projects</h2>
         <p className="subtext">
-          Check out more projects at{" "}
-          <a href="https://joshfriedman.dev">joshfriedman.dev</a>. All source
-          code is available at{" "}
+          More projects at{" "}
+          <a href="https://joshfriedman.dev">joshfriedman.dev</a>. Source code
+          available at{" "}
           <a href="https://github.com/jwiggiff">github.com/jwiggiff</a>.
         </p>
         <ul className="projects">
@@ -156,9 +155,11 @@ function Resume() {
             .map((project, index) => (
               <li key={index} className="project">
                 <h4>{project.title}</h4>
-                <a target="_blank" href={project.url}>
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
+                {project.url && (
+                  <a target="_blank" href={project.url}>
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
+                )}
                 <ReactMarkdown>{project.resume_description}</ReactMarkdown>
               </li>
             ))}

@@ -26,7 +26,7 @@ export default function Projects({ onScrollIn }) {
       <Heading>Projects</Heading>
       <ul className="projects-list" ref={projectsList}>
         {projects
-          .filter((p) => !p.resume_only)
+          .filter((p) => p.description)
           .map((project, i) => (
             <Card key={i} {...project} />
           ))}

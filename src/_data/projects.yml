@@ -2,7 +2,7 @@
   description: >
     An AI-powered encyclopedia.
   resume_description: >
-    An AI-powered encyclopedia I built using **Next.JS**. It uses **Typescript + React** on the frontend and **Node.JS** in the backend to connect with the **OpenAI API**.
+    An AI-powered encyclopedia I built using **Next.JS**. It uses **TypeScript + React** on the frontend and **Node.JS** in the backend to connect with the **OpenAI API**.
   url: https://github.com/Jwiggiff/infinipedia
   image: "/assets/img/infinipedia.png"
 
@@ -18,6 +18,10 @@
     A playlist generator powered by **GPT-3** I built with a couple friends. I worked on the frontend using **Vite + React** and **Node.JS + Express** for the backend. It interacts with **OpenAI's API** to generate a playlist based on the inputted songs and uses **Spotify's API** for music searching and retrieving song information.
   url: https://github.com/ethanwhitcher/playlist.ai
   image: "/assets/img/playlistai.png"
+
+- title: Autonomous Rover
+  resume_description: >
+    An autonomous rover built as part of a Mechatronics class. The rover was powered by an **Arduino** and used a combination of **Infrared and Ultrasonic sensors** as well as **PID control** and a robotic arm to complete several capture-the-flag challenges throughout the course.
 
 - title: Iris
   description: >
