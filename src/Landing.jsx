@@ -23,7 +23,7 @@ export default function Landing({ onScrollIn }) {
         <span>Josh Friedman</span>
       </h1>
       <p>
-        <span>👋</span> Hey! I'm Josh, a full stack developer based in Toronto. I'm currently
+        <span>👋</span> Hey! I'm Josh, a full stack & embedded systems engineer based in Toronto. I'm currently
         studying Computer Engineering at Queen's University in Kingston.
       </p>
     </section>
