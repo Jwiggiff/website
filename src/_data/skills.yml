@@ -5,10 +5,11 @@ Languages:
   - CSS
   - SCSS
   - SQL
+  - Python
   - C
   - Java
   - Assembly
-  - Python
+  - VHDL
 Frameworks:
   - NodeJS
   - React
@@ -20,3 +21,4 @@ Tools:
   - Firebase
   - Linux
   - VSCode
+  - Quartus
