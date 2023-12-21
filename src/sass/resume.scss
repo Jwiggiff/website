@@ -23,6 +23,13 @@ body {
   size: A4;
   margin: 0.75cm;
 }
+@media print {
+  html,
+  body {
+    width: 210mm;
+    height: 297mm; // A4 size
+  }
+}
 svg {
   width: 1em;
   height: 1em;
