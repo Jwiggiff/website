@@ -46,12 +46,33 @@ const skillIcons = {
 };
 
 export default function SkillsList() {
-  const onMouseMove = ({ target, clientX, clientY }) => {
-    let rect = target.getBoundingClientRect();
-    const x = clientX - rect.x;
-    const y = clientY - rect.y;
-    target.style.setProperty("--x", `${x}px`);
-    target.style.setProperty("--y", `${y}px`);
+  let draggingEl = useRef(null);
+
+  const onMouseDown = (e) => {
+    if (e.buttons != 1) return;
+    e.preventDefault();
+    draggingEl.current = e.target;
+    e.target.classList.add("dragging");
+    e.target.dataset.startX = e.clientX;
+    e.target.dataset.startY = e.clientY;
+  };
+
+  const onMouseMove = (e) => {
+    if (e.buttons == 1) {
+      e.preventDefault();
+      const dx = Number(draggingEl.current.dataset.dx) + e.movementX;
+      const dy = Number(draggingEl.current.dataset.dy) + e.movementY;
+      draggingEl.current.dataset.dx = dx;
+      draggingEl.current.dataset.dy = dy;
+      draggingEl.current.style.setProperty("--dx", `${dx}px`);
+      draggingEl.current.style.setProperty("--dy", `${dy}px`);
+    }
+  };
+
+  const onMouseUp = (e) => {
+    e.preventDefault();
+    draggingEl.current.classList.remove("dragging");
+    draggingEl.current = null;
   };
 
   return (
@@ -60,7 +81,14 @@ export default function SkillsList() {
         {Object.values(skills)
           .flat()
           .map((skill, i) => (
-            <li key={i} onMouseMove={onMouseMove}>
+            <li
+              key={i}
+              onMouseDown={onMouseDown}
+              onMouseMove={onMouseMove}
+              onMouseUp={onMouseUp}
+              data-dx="0"
+              data-dy="0"
+            >
               {<FontAwesomeIcon icon={skillIcons[skill]} />}
               {skill}
             </li>

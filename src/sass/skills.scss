@@ -15,6 +15,7 @@
     max-width: calc(100% - 20rem);
     // font-size: clamp(1.25em, 3vw, 3em);
     font-size: clamp(1.25em, 2vw, 3em);
+    position: relative;
 
     @include mq($mobile) {
       max-width: 100%;
@@ -29,31 +30,24 @@
       border-radius: 8px;
       border: 1px solid rgba($text-color, 0.4);
       font-weight: bold;
+      transition: box-shadow 0.2s ease, scale 0.2s ease;
       position: relative;
-      transition: transform 0.2s ease;
+      top: var(--dy);
+      left: var(--dx);
+      cursor: move;
+      cursor: grab;
 
-      &:hover {
-        transform: rotateX(var(--dy)) rotateY(var(--dx));
-
-        &::after {
-          opacity: 0.25;
-        }
+      &:active {
+        cursor: grabbing;
       }
 
-      &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        inset: -2px;
-        border-radius: inherit;
-        background-image: radial-gradient(
-          circle at var(--x) var(--y),
-          $lightblue,
-          transparent
-        );
-        opacity: 0;
-        z-index: -1;
-        transition: opacity 0.3s;
+      &.dragging {
+        box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.25);
+        scale: 1.05;
+      }
+
+      svg {
+        pointer-events: none;
       }
     }
   }
