@@ -145,7 +145,7 @@ p.subtext {
     display: grid;
     grid-template-columns: 1fr auto;
 
-    .company {
+    .title {
       width: max-content;
       font-weight: bold;
       text-decoration: none;
@@ -156,7 +156,7 @@ p.subtext {
     font-size: 0.9em;
     font-style: italic;
 
-    .title {
+    .company {
       float: left;
     }
     .date {

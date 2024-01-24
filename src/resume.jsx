@@ -113,18 +113,18 @@ function Resume() {
                 </a>
               )}
               <div>
-                {job.organization && (
+                {job.title && (
                   <>
                     <div className="firstRow">
-                      <a href={job.url} target="_blank" className="company">
-                        {job.organization}
+                      <a href={job.url} target="_blank" className="title">
+                        {job.title}
                       </a>
                       <span className="location">{job.location}</span>
                     </div>
                   </>
                 )}
                 <div className="secondRow">
-                  <span className="title">{job.title}</span>
+                  <span className="company">{job.organization}</span>
                   <span className="date">{job.date}</span>
                 </div>
               </div>
