@@ -126,7 +126,7 @@ p.subtext {
 
   .heading {
     display: grid;
-    grid-template-columns: 2.5rem 1fr;
+    grid-template-columns: auto 1fr;
     align-items: center;
 
     .icon img {

@@ -19,6 +19,8 @@ import ReactDOM from "react-dom/client";
 import "./sass/resume.scss";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
+const DISABLE_IMAGES = false;
+
 function Resume() {
   return (
     <>
@@ -29,29 +31,35 @@ function Resume() {
           </div>
           <div className="links">
             <a target="_blank" href={"https://" + config.url}>
-              <FontAwesomeIcon icon={faGlobe} /> {config.url}
+              {!DISABLE_IMAGES && <FontAwesomeIcon icon={faGlobe} />}
+              {config.url}
             </a>
             <div className="clear"></div>
             <span>
-              <FontAwesomeIcon icon={faEnvelope} /> {config.email}
+              {!DISABLE_IMAGES && <FontAwesomeIcon icon={faEnvelope} />}
+              {config.email}
             </span>
             <div className="clear"></div>
             <span>
-              <FontAwesomeIcon icon={faPhone} /> {config.phone}
+              {!DISABLE_IMAGES && <FontAwesomeIcon icon={faPhone} />}
+              {config.phone}
             </span>
           </div>
         </div>
         <div className="right">
           <span>
-            {config.location} <FontAwesomeIcon icon={faLocationDot} />
+            {config.location}{" "}
+            {!DISABLE_IMAGES && <FontAwesomeIcon icon={faLocationDot} />}
           </span>
           <div className="clear"></div>
           <a target="_blank" href={"https://" + config.linkedin}>
-            {config.linkedin} <FontAwesomeIcon icon={faLinkedin} />
+            {config.linkedin}{" "}
+            {!DISABLE_IMAGES && <FontAwesomeIcon icon={faLinkedin} />}
           </a>
           <div className="clear"></div>
           <a target="_blank" href={"https://" + config.github}>
-            {config.github} <FontAwesomeIcon icon={faGithub} />
+            {config.github}{" "}
+            {!DISABLE_IMAGES && <FontAwesomeIcon icon={faGithub} />}
           </a>
         </div>
         <div className="clear"></div>
@@ -107,7 +115,7 @@ function Resume() {
             className={"experience" + (job.continued ? " continued" : "")}
           >
             <div className="heading">
-              {job.icon && (
+              {!DISABLE_IMAGES && job.icon && (
                 <a href={job.url} target="_blank" className="icon">
                   <img className="icon" src={job.icon} alt={job.organization} />
                 </a>
@@ -155,7 +163,7 @@ function Resume() {
             .map((project, index) => (
               <li key={index} className="project">
                 <h4>{project.title}</h4>
-                {project.url && (
+                {!DISABLE_IMAGES && project.url && (
                   <a target="_blank" href={project.url}>
                     <FontAwesomeIcon icon={faGithub} />
                   </a>
