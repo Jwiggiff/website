@@ -17,6 +17,7 @@ import {
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import {
   CIcon,
+  CppIcon,
   FirebaseIcon,
   FlutterIcon,
   TypeScriptIcon,
@@ -31,6 +32,7 @@ const skillIcons = {
   SCSS: faSass,
   SQL: faDatabase,
   C: CIcon,
+  "C++": CppIcon,
   Java: faJava,
   // Assembly: ,
   NodeJS: faNode,
@@ -89,7 +91,7 @@ export default function SkillsList() {
               data-dx="0"
               data-dy="0"
             >
-              {<FontAwesomeIcon icon={skillIcons[skill]} />}
+              {<FontAwesomeIcon fillRule="evenodd" icon={skillIcons[skill]} />}
               {skill}
             </li>
           ))}
