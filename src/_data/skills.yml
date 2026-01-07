@@ -1,25 +1,25 @@
 Languages:
   - JavaScript
   - TypeScript
+  - Python
   - HTML
   - CSS
   - SCSS
   - SQL
-  - Python
   - C
   - C++
   - Java
   - Assembly
-  - Verilog
 Frameworks:
   - NodeJS
   - React
   - React Native
+  - Django
   - Flutter
 Tools:
   - Git
   - AWS
+  - Supabase
   - Firebase
   - Linux
   - VSCode
-  - Quartus

@@ -22,6 +22,8 @@ import {
   FlutterIcon,
   TypeScriptIcon,
   VSCodeIcon,
+  SupabaseIcon,
+  DjangoIcon,
 } from "./_components/CustomIcons";
 
 const skillIcons = {
@@ -45,6 +47,8 @@ const skillIcons = {
   Linux: faLinux,
   VSCode: VSCodeIcon,
   Python: faPython,
+  Supabase: SupabaseIcon,
+  Django: DjangoIcon,
 };
 
 export default function SkillsList() {
