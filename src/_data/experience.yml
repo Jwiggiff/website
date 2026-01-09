@@ -2,7 +2,7 @@
   icon: /assets/img/mave.png
   url: https://www.maveai.co/
   title: Software Engineer Intern
-  date: May 2024 - August 2025
+  date: May 2024 - August 2025, Full-Time
   location: Toronto, Ontario
   description:
     - Joined as the **5th hire** at an early-stage AI startup building a virtual real estate assistant that automates back-office operations, enabling agents to focus on client acquisition and lead generation
@@ -17,7 +17,7 @@
   icon: /assets/img/nutripair.png
   url: https://www.nutripair.co/
   title: Founding Full Stack Tech Lead
-  date: August 2023 - Present
+  date: August 2023 - Present, Part-Time
   location: California (Remote)
   description:
     - Led a team of **4 engineers** in building a flagship **React Native & Supabase** mobile app from scratch, architected the system by creating the PRD, designing database schema, and defining frontend/backend architecture to align with product goals
@@ -30,7 +30,7 @@
   icon: /assets/img/nutripair.png
   url: https://www.nutripair.co/
   title: Software Engineering Intern (Full Stack)
-  date: January 2023 - August 2023
+  date: January 2023 - August 2023, Part-Time
   location: California (Remote)
   description:
     - Implemented authentication system using **AWS Cognito** across the stack, **reducing security vulnerabilities by 50%**
