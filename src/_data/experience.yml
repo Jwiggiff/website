@@ -5,39 +5,35 @@
   date: May 2024 - August 2025
   location: Toronto, Ontario
   description:
-    - Architected and built an **AI-powered** marketing generation engine using **Python, JavaScript, HTML, and CSS** that automatically generates marketing materials by integrating multiple real estate data sources (MLS, property databases, market analytics), processing ~100 templates daily and becoming the core product generating 80%+ of company revenue
-    - Engineered the foundational system that enabled the company's $5M seed funding round by demonstrating scalable AI automation and revenue potential to investors
-    - Collaborated with product and leadership teams to develop a flagship product for an untapped market segment, achieving 85% CSAT in first month and successfully launching beta testers across 6 major Toronto real estate brokerages
-    - Built an internal analytics dashboard using **Python and Django** that tracked user interactions, conversion rates, and product KPIs, enabling data-driven feature prioritization and improving product iteration speed by 40%
+    - Joined as the **5th hire** at an early-stage AI startup building a virtual real estate assistant that automates back-office operations, enabling agents to focus on client acquisition and lead generation
+    - Architected and built an **AI-powered** marketing generation engine using **Python, JavaScript, HTML, and CSS** that automatically generates marketing materials by integrating multiple real estate data sources (MLS, property databases, market analytics), processing ~100 templates daily and becoming the core product generating **80%+ of company revenue**, driving revenue growth from $0 to **$100k+ ARR within 6 months**
+    - Engineered the foundational system that enabled the company's **$5M seed funding round** by demonstrating scalable AI automation and revenue potential to investors, supporting company growth from **5 to 25+ employees**
+    - Launched flagship product targeting an untapped market segment, achieving **85% CSAT** in first month and successfully onboarding beta testers across 6 major Toronto real estate brokerages
+    - Built an internal analytics dashboard using **Python and Django** that tracked user interactions, conversion rates, and product KPIs, enabling data-driven feature prioritization and **improving product iteration speed by 40%**
+    - Optimized SQL queries for internal tools, **reducing load times from 2 minutes to <500ms**
+    - Implemented automated testing pipeline for marketing templates, **increasing template development speed by 4x**
 
 - organization: Nutripair
   icon: /assets/img/nutripair.png
   url: https://www.nutripair.co/
   title: Founding Full Stack Tech Lead
-  date: January 2023 - Present
+  date: August 2023 - Present
   location: California (Remote)
   description:
-    - Led a team of 4 engineers in building a **React Native & Supabase** mobile app connecting users with dietary restrictions to promote food accessibility, growing from 0 to 50 users signed up for the beta
-    - Architected and implemented full-stack observability using **PostHog** with end-to-end event tracking, reducing mean time to resolution (MTTR) from 1 week to less than 48 hours and enabling data-driven product decisions through real-time user behavior insights
-    - Established comprehensive testing infrastructure using **Jest** and React Native Testing Library, achieving 90% code coverage and reducing production bugs by 70% compared to pre-testing baseline
+    - Led a team of **4 engineers** in building a flagship **React Native & Supabase** mobile app from scratch, architected the system by creating the PRD, designing database schema, and defining frontend/backend architecture to align with product goals
+    - Implemented automated code quality checks and testing pipeline for PRs, enabling the team to **ship new features 2x faster** while maintaining consistent code quality
+    - Architected and implemented full-stack observability using **PostHog** with end-to-end event tracking, **reducing MTTR from 1 week to less than 48 hours** and enabling data-driven product decisions through real-time user behavior insights
+    - Established comprehensive testing infrastructure using **Jest** and React Native Testing Library, achieving **90% code coverage** and **reducing production bugs by 70%** compared to pre-testing baseline
+    - Secured **Verizon startup grant** by demonstrating product innovation and technical execution through system architecture and rapid feature delivery
 
-- organization: Ollon
-  icon: /assets/img/ollon.png
-  url: https://www.ollon.ca/
-  title: Software Engineer Intern
-  date: June 2023 - August 2023
-  location: Toronto, Ontario (Remote)
+- organization: Nutripair
+  icon: /assets/img/nutripair.png
+  url: https://www.nutripair.co/
+  title: Software Engineering Intern (Full Stack)
+  date: January 2023 - August 2023
+  location: California (Remote)
   description:
-    - Refactored and optimized a production **Python** machine learning model, improving code modularity and maintainability while increasing prediction accuracy by over 20% and reducing inference time by over 50% through algorithmic improvements
-    - Built real-time email status tracking feature connecting **React** frontend to **Node.js** backend via WebSocket, reducing customer support tickets by 75% and improving user experience with instant delivery confirmations
-    - Collaborated directly with 3+ clients to gather requirements and iterate on features, reducing average revision cycles from 3+ iterations to 1-2, improving client satisfaction scores by 25%
-
-- organization: Engineering Society of Queen's University
-  icon: /assets/img/engsoc.png
-  url: https://www.engsoc.queensu.ca/
-  title: Director of Information Technology
-  date: May 2023 - Present
-  location: Kingston, Ontario
-  description:
-    - Architected and managed IT infrastructure for 7 businesses and 40+ teams using **Linux**, **AWS** cloud services, and automation scripts, reducing disk usage by 28% (saving $1,200+ annually) and achieving 99% uptime
-    - Automated server maintenance workflows and security auditing pipelines using **Shell** scripts, reducing security vulnerabilities by 85% and decreasing manual maintenance time by 60%
+    - Implemented authentication system using **AWS Cognito** across the stack, **reducing security vulnerabilities by 50%**
+    - Implemented a **CloudFront** caching layer that **reduced loading times by 25%**, **increasing customer satisfaction by 65%**
+    - Created data pipelines using data augmentation and **ML** for parsing data to ingest restaurant and menu data from direct restaurant partnerships and online data sources, enabling comprehensive food accessibility database
+    - Iterated **React + TypeScript** frontend based on beta tester feedback, **improving user experience and satisfaction**
