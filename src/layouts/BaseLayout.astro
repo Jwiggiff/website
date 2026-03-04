@@ -1,0 +1,35 @@
+---
+import "@fontsource/poppins/100";
+import "@fontsource/poppins/200";
+import "@fontsource/poppins/300";
+import "@fontsource/poppins/400";
+import "@fontsource/poppins/500";
+import "@fontsource/poppins/600";
+import "@fontsource/poppins/700";
+import "@fontsource/poppins/800";
+import "@fontsource/poppins/900";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  bodyClass?: string;
+  bodyStyle?: string;
+}
+
+const { title, bodyClass, bodyStyle } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class={bodyClass} style={bodyStyle}>
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,220 @@
+<div class="keeb">
+  <span class="logo">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Apple_Computer_Logo_rainbow.svg/1757px-Apple_Computer_Logo_rainbow.svg.png"
+      alt="Apple Logo"
+    />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Apple_logo_hollow.svg/640px-Apple_logo_hollow.svg.png"
+      alt="Apple Outline"
+    />
+  </span>
+  <div class="row">
+    <div class="key">~<br /><br />`</div>
+    <div class="key">!<br /><br />1</div>
+    <div class="key">@<br /><br />2</div>
+    <div class="key">#<br /><br />3</div>
+    <div class="key">$<br /><br />4</div>
+    <div class="key">%<br /><br />5</div>
+    <div class="key">^<br /><br />6</div>
+    <div class="key">&<br /><br />7</div>
+    <div class="key">*<br /><br />8</div>
+    <div class="key">(<br /><br />9</div>
+    <div class="key">)<br /><br />0</div>
+    <div class="key">_<br /><br />-</div>
+    <div class="key">+<br /><br />=</div>
+    <div class="key medium">delete</div>
+  </div>
+  <div class="row">
+    <div class="key small">tab</div>
+    <div class="key">Q</div>
+    <div class="key">W</div>
+    <div class="key">E</div>
+    <div class="key">R</div>
+    <div class="key">T</div>
+    <div class="key">Y</div>
+    <div class="key">U</div>
+    <div class="key">I</div>
+    <div class="key">O</div>
+    <div class="key">P</div>
+    <div class="key">[</div>
+    <div class="key">]</div>
+    <div class="key small">\</div>
+  </div>
+  <div class="row">
+    <div class="key medium">caps<br />lock</div>
+    <div class="key">A</div>
+    <div class="key">S</div>
+    <div class="key">D</div>
+    <div class="key">F</div>
+    <div class="key">G</div>
+    <div class="key">H</div>
+    <div class="key">J</div>
+    <div class="key">K</div>
+    <div class="key">L</div>
+    <div class="key">;</div>
+    <div class="key">'</div>
+    <div class="key medium">return</div>
+  </div>
+  <div class="row">
+    <div class="key large">shift</div>
+    <div class="key">Z</div>
+    <div class="key">X</div>
+    <div class="key">C</div>
+    <div class="key">V</div>
+    <div class="key">B</div>
+    <div class="key">N</div>
+    <div class="key">M</div>
+    <div class="key">,</div>
+    <div class="key">.</div>
+    <div class="key">/</div>
+    <div class="key large">shift</div>
+  </div>
+  <div class="row">
+    <div class="key small">control</div>
+    <div class="key xs">alt<br /><br />option</div>
+    <div class="key small command">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Apple_logo_hollow.svg/640px-Apple_logo_hollow.svg.png"
+        alt="Apple logo"
+      />
+      ⌘
+    </div>
+    <div class="key space"></div>
+    <div class="key small command">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Apple_logo_hollow.svg/640px-Apple_logo_hollow.svg.png"
+        alt="Apple logo"
+      />
+      ⌘
+    </div>
+    <div class="key xs">alt<br /><br />option</div>
+    <div class="key small">control</div>
+  </div>
+</div>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap");
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --scale: 0.8rem;
+    --gap: calc(1.15 * var(--scale));
+  }
+
+  body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #222;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+
+  .keeb {
+    padding: 2rem;
+    padding-top: 8rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    gap: var(--gap);
+    background-color: #ccc;
+    border-radius: 1rem;
+    position: relative;
+    box-shadow: 0 0 calc(0.1 * var(--scale)) rgba(0, 0, 0, 0.25);
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: calc(100% + 0.75 * var(--scale));
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background-color: #666;
+      border-radius: inherit;
+      box-shadow: 0 calc(0.3 * var(--scale)) calc(1 * var(--scale))
+        calc(0.6 * var(--scale)) rgba(0, 0, 0, 0.7);
+    }
+
+    .logo {
+      position: absolute;
+      top: calc(2 * var(--scale));
+      left: calc(2 * var(--scale));
+      width: calc(2.5 * var(--scale));
+
+      img {
+        width: 100%;
+        position: absolute;
+      }
+    }
+  }
+
+  .row {
+    display: flex;
+    gap: var(--gap);
+    justify-content: space-between;
+  }
+
+  .key {
+    aspect-ratio: 1/1;
+    width: calc(5 * var(--scale));
+    background-color: #ccc;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.1),
+      transparent 20%,
+      transparent 80%,
+      rgba(0, 0, 0, 0.1)
+    );
+    border-radius: 1.5px;
+    box-shadow:
+      0 0 calc(0.1 * var(--scale)) rgba(0, 0, 0, 0.25),
+      0 calc(0.3 * var(--scale)) 0 calc(0.5 * var(--scale)) #aaa,
+      0 calc(0.3 * var(--scale)) calc(1 * var(--scale)) calc(0.6 * var(--scale))
+        rgba(0, 0, 0, 0.7),
+      0 0 calc(0.5 * var(--scale)) rgba(0, 0, 0, 0.25) inset;
+
+    padding: calc(0.75 * var(--scale));
+    font-style: italic;
+    font-size: calc(1.5 * var(--scale));
+    line-height: 0.85em;
+    display: grid;
+    place-items: end left;
+
+    &.xs {
+      aspect-ratio: 1.25/1;
+      width: calc(6.25 * var(--scale));
+    }
+    &.small {
+      aspect-ratio: 1.5/1;
+      width: calc(7.5 * var(--scale));
+    }
+    &.medium {
+      aspect-ratio: 2/1;
+      width: calc(10 * var(--scale));
+    }
+    &.large {
+      aspect-ratio: 2.5/1;
+      width: calc(12.5 * var(--scale));
+    }
+    &.space {
+      aspect-ratio: 8/1;
+      width: calc(40 * var(--scale));
+      background-image: none;
+    }
+
+    &.command {
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        width: calc(1.25 * var(--scale));
+      }
+    }
+  }
+</style>

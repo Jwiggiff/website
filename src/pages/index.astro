@@ -1,0 +1,13 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Desktop from "../components/Desktop";
+
+import { getCollection } from "astro:content";
+
+const projects = await getCollection("projects");
+const art = await getCollection("art");
+---
+
+<BaseLayout title="Josh Friedman">
+  <Desktop client:load projects={projects} art={art} />
+</BaseLayout>

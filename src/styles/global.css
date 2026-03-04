@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-background: #24262e;
+  --color-surface-1: #363845;
+  --color-surface-2: #484b5b;
+  --color-primary-dark: #2a3779;
+  --color-primary-medium: #4053b5;
+  --color-primary-light: #7786cf;
+
+  /* Fonts */
+  --font-sans: "Poppins", sans-serif;
+
+  /* Shadows */
+  --shadow-block:
+    0px 0px 0 2px var(--tw-shadow-color, black),
+    2px 1px 0 2px var(--tw-shadow-color, black),
+    4px 2px 0 2px var(--tw-shadow-color, black),
+    6px 3px 0 2px var(--tw-shadow-color, black);
+
+  /* Gradients */
+  --gradient-lightbar: linear-gradient(
+    to bottom,
+    #141414 0%,
+    #060606 20%,
+    black 50%,
+    #060606 80%,
+    #141414 100%
+  );
+  --gradient-light: radial-gradient(
+    ellipse at top center,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  --gradient-light-mask: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  --gradient-gallery-bg: linear-gradient(
+    to bottom,
+    #fdf6e3 0%,
+    #fdf6e3 1%,
+    red 2%,
+    red 98%,
+    #fdf6e3 99%,
+    #fdf6e3 100%
+  );
+
+  /* Clip paths */
+  --clippath-light: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+@layer base {
+  html,
+  body {
+    width: 100%;
+    min-height: 100%;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: white;
+  }
+}
+
+.\@container-scroll {
+  container-type: scroll-state;
+}
+
+@custom-variant @stuck-top {
+  @supports (container-type: scroll-state) {
+    @container scroll-state(stuck: top) {
+      @slot;
+    }
+  }
+}

@@ -1,0 +1,167 @@
+<div class="baymax">
+  <div class="head">
+    <div class="eye"></div>
+    <div class="mouth"></div>
+    <div class="eye"></div>
+  </div>
+  <div class="body"></div>
+  <div class="arm left"></div>
+  <div class="arm right"></div>
+  <div class="legs">
+    <div class="leg left"></div>
+    <div class="leg right"></div>
+  </div>
+</div>
+
+<style>
+  :root {
+    --scale: 1rem;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #222;
+  }
+
+  .baymax {
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+
+  .head {
+    position: absolute;
+    bottom: 95%;
+    width: calc(6.5 * var(--scale));
+    height: calc(4 * var(--scale));
+    background: white;
+    border-radius: 45%;
+    translate: 5%;
+    rotate: 10deg;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(
+      circle at 50% 40%,
+      white,
+      rgba(0, 0, 0, 0.5)
+    );
+    box-shadow: 0 0 calc(2 * var(--scale)) rgba(0, 0, 0, 0.5);
+
+    .eye {
+      aspect-ratio: 1/1;
+      width: calc(1 * var(--scale));
+      background: black;
+      border-radius: 50%;
+      translate: 0 -20%;
+    }
+    .mouth {
+      height: 2px;
+      width: calc(3 * var(--scale));
+      background: black;
+      margin-inline: -5%;
+    }
+  }
+
+  .body {
+    width: calc(17 * var(--scale));
+    height: calc(25 * var(--scale));
+    border-radius: 50% 50% 50% 50% / 65% 65% 35% 35%;
+    background-color: white;
+    background-image:
+      radial-gradient(circle at 50% 15%, white 60%, rgba(0, 0, 0, 0.5)),
+      radial-gradient(white 60%, rgba(0, 0, 0, 0.5));
+    box-shadow:
+      0 0 calc(1 * var(--scale)) rgba(0, 0, 0, 0.5),
+      0 0 calc(1 * var(--scale)) rgba(0, 0, 0, 0.5) inset;
+  }
+
+  .arm {
+    z-index: -1;
+    position: absolute;
+    top: 5%;
+    right: 70%;
+    width: calc(9 * var(--scale));
+    height: calc(18 * var(--scale));
+    background: white;
+    border-radius: 100% 0% 86% 14% / 84% 12% 88% 16%;
+    rotate: 5deg;
+    box-shadow: 0 0 calc(2 * var(--scale)) rgba(0, 0, 0, 0.5) inset;
+    background-image:
+      radial-gradient(circle at 90% 15%, white, transparent),
+      linear-gradient(
+        105deg,
+        rgba(0, 0, 0, 1),
+        white 25%,
+        white 75%,
+        rgba(0, 0, 0, 0.5)
+      );
+
+    &.right {
+      right: initial;
+      left: 70%;
+      rotate: -5deg;
+      scale: -1 1;
+    }
+  }
+
+  .finger {
+    position: absolute;
+    top: 99%;
+    left: 5%;
+    aspect-ratio: 1/1;
+    width: calc(3 * var(--scale));
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -25%;
+      left: 15%;
+      width: calc(3 * var(--scale));
+      height: calc(3 * var(--scale));
+      background: white;
+      border-radius: 50%;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      width: calc(3 * var(--scale));
+      height: calc(3 * var(--scale));
+      background: #222;
+      border-radius: 50%;
+    }
+  }
+
+  .legs {
+    position: absolute;
+    top: 60%;
+    width: calc(13 * var(--scale));
+    height: calc(15 * var(--scale));
+    display: flex;
+    z-index: -1;
+  }
+
+  .leg {
+    background: white;
+    height: 100%;
+    width: 50%;
+    border-radius: 52% 48% 37% 63% / 60% 73% 27% 40%;
+    box-shadow: 0 0 calc(3 * var(--scale)) rgba(0, 0, 0.25) inset;
+
+    &.right {
+      scale: -1 1;
+    }
+  }
+</style>

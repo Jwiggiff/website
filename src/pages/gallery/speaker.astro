@@ -1,0 +1,180 @@
+<div class="speaker">
+  <div class="tweeter">
+    <div class="grill">
+      <div class="screws">
+        <div class="screw"></div>
+        <div class="screw"></div>
+        <div class="screw"></div>
+        <div class="screw"></div>
+      </div>
+    </div>
+    <div class="screws">
+      <div class="screw"></div>
+      <div class="screw"></div>
+      <div class="screw"></div>
+      <div class="screw"></div>
+    </div>
+  </div>
+  <div class="sub">
+    <div class="grill"></div>
+    <div class="screws">
+      <div class="screw"></div>
+      <div class="screw"></div>
+      <div class="screw"></div>
+      <div class="screw"></div>
+    </div>
+  </div>
+</div>
+
+<style>
+  :root {
+    --angle: 45deg;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    background: #333;
+  }
+
+  .speaker {
+    aspect-ratio: 1/1.6;
+    height: calc(100% - 6rem);
+    background:
+      linear-gradient(var(--angle), transparent, #222),
+      radial-gradient(circle, #121212, #111);
+    background-size:
+      100% 100%,
+      2px 2px;
+    border-radius: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .tweeter,
+  .sub {
+    aspect-ratio: 1/1;
+    background: black;
+    border-radius: 50%;
+  }
+
+  .screws {
+    position: absolute;
+    aspect-ratio: 1/1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .screw {
+      aspect-ratio: 1/1;
+      width: 1rem;
+      border-radius: 50%;
+      background: radial-gradient(black 20%, #333, black 80%);
+      box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.25) inset;
+
+      &:nth-child(2) {
+        place-self: start end;
+      }
+      &:nth-child(3) {
+        place-self: end start;
+      }
+      &:nth-child(4) {
+        place-self: end end;
+      }
+    }
+  }
+
+  .tweeter {
+    width: 55%;
+    place-self: end center;
+    display: grid;
+    place-items: center;
+    position: relative;
+
+    background: radial-gradient(circle at 60% 60%, #2a2a2a, #111 50%);
+
+    .grill {
+      aspect-ratio: 1/1;
+      width: 50%;
+      border-radius: 50%;
+      background: radial-gradient(#222, #111 75%);
+      background-size: 4px 4px;
+      display: grid;
+      place-items: center;
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        background: radial-gradient(transparent 60%, black);
+      }
+
+      .screws {
+        width: 98%;
+
+        .screw::after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 100%;
+          border-radius: inherit;
+          background: black;
+          opacity: 0.4;
+        }
+      }
+    }
+
+    .screws {
+      width: 70%;
+    }
+  }
+
+  .sub {
+    width: 90%;
+    place-self: start center;
+    background: radial-gradient(
+      circle,
+      #111 50%,
+      #222 55%,
+      #1d1d1d 55%,
+      #111 70%
+    );
+    display: grid;
+    place-items: center;
+    position: relative;
+
+    .grill {
+      aspect-ratio: 1/1;
+      width: 70%;
+      border-radius: 50%;
+      background: radial-gradient(#aaa, #e1e1e1);
+      box-shadow: 0 0 2px black;
+      display: grid;
+      place-items: center;
+
+      &::after {
+        content: "";
+        aspect-ratio: 1/1;
+        width: 45%;
+        border-radius: inherit;
+        box-shadow: 0 0 4px black;
+        background: radial-gradient(circle at 20% 20%, white, #888);
+      }
+    }
+
+    .screws {
+      width: 68%;
+    }
+  }
+</style>

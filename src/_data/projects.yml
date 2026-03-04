@@ -1,0 +1,50 @@
+- id: cashflow
+  title: CashFlow
+  description: >
+    A self-hostable PWA for tracking and analyzing your personal finances.
+  resume_description: >
+    A self-hostable website + PWA for tracking and analyzing your personal finances. Built using **Next.JS, Tailwind, and Prisma** and self-hostable through a published **Docker** image.
+  url: https://github.com/Jwiggiff/CashFlow
+  image: "/assets/img/cashflow.png"
+
+- id: infinipedia
+  title: Infinipedia
+  description: >
+    An AI-powered encyclopedia.
+  resume_description: >
+    An AI-powered encyclopedia built using **TypeScript, React, and Node.JS**. It uses the **OpenAI API** to generate content on the fly based on the user's query.
+  url: https://github.com/Jwiggiff/infinipedia
+  image: "/assets/img/infinipedia.png"
+
+- id: playlistai
+  title: Playlist.AI
+  description: >
+    A playlist generator using AI.
+  url: https://github.com/ethanwhitcher/playlist.ai
+  image: "/assets/img/playlistai.png"
+
+- id: autonomousrover
+  title: Autonomous Rover
+  resume_description: >
+    An autonomous rover built as part of a Mechatronics class. The rover was powered by an **Arduino** and used a combination of **Infrared and Ultrasonic sensors** as well as **PID control** and a robotic arm to complete several capture-the-flag challenges throughout the course.
+
+- id: iris
+  title: Iris
+  description: >
+    A live transcription and translation tool for lecturers.
+  url: https://github.com/Jwiggiff/QHacks22
+  image: "/assets/img/iris.png"
+
+- id: jumper
+  title: Jumper
+  description: >
+    A platform jumper game that has a new challenge each day.
+  url: https://github.com/Jwiggiff/jumperio
+  image: "/assets/img/jumper.png"
+
+- id: dashtab
+  title: DashTab
+  description: >
+    A custom New Tab page for Chrome with calendar, shortcuts and more.
+  url: https://chrome.google.com/webstore/detail/dashtab/eikheedcbbnljjnifbekbccllgjnggak
+  image: "/assets/img/dashtab.png"

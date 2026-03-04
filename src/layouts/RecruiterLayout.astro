@@ -1,0 +1,15 @@
+---
+import Header from "../components/Header.astro";
+import bg from "../assets/bg.svg";
+import BaseLayout from "./BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Josh Friedman - Recruiter"
+  bodyStyle={`background-image: url(${bg.src})`}
+>
+  <Header />
+  <main class="container mx-auto px-16">
+    <slot />
+  </main>
+</BaseLayout>

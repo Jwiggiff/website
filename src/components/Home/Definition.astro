@@ -1,0 +1,13 @@
+---
+interface Props {
+  subtitle: string;
+  description: string;
+}
+
+const { subtitle, description } = Astro.props;
+---
+
+<div class="flex flex-col mb-2 gap-1">
+  <h4 class="text-2xl font-semibold opacity-25 uppercase">{subtitle}</h4>
+  <p class="text-2xl ml-8">{description}</p>
+</div>

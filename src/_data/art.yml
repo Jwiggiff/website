@@ -1,0 +1,38 @@
+- id: mac_classic
+  title: "Macintosh Classic II"
+  description: "A timeless classic from Apple."
+  url: "https://codepen.io/jwiggiff/pen/gOKyWyK"
+  embedUrl: "/gallery/mac_classic"
+  aspectRatio: "4/5"
+  scale: 0.75
+
+- id: keyboard
+  title: "Apple II Keyboard"
+  description: "A recreation of the Apple II keyboard."
+  url: "https://codepen.io/jwiggiff/pen/bGKZZyp"
+  embedUrl: "/gallery/keyboard"
+  aspectRatio: "16/9"
+  scale: 0.5
+
+- id: ipod
+  title: "Original Apple iPod"
+  description: "The first iPod released in 2001."
+  url: "https://codepen.io/jwiggiff/pen/wvXZzjJ"
+  embedUrl: "/gallery/ipod"
+  aspectRatio: "4/5"
+  scale: 0.7
+
+- id: speaker
+  title: "Studio Monitor"
+  description: "A classic-looking studio monitor with a tweeter and subwoofer."
+  url: "https://codepen.io/jwiggiff/pen/KKGbNJm"
+  embedUrl: "/gallery/speaker"
+  aspectRatio: "4/5"
+
+- id: baymax
+  title: "Baymax"
+  description: "A recreation of the Baymax from the movie Big Hero 6."
+  url: "https://codepen.io/jwiggiff/pen/rNKbmaR"
+  embedUrl: "/gallery/baymax"
+  aspectRatio: "4/5"
+  scale: 0.7
